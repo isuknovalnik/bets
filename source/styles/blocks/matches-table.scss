@@ -64,6 +64,18 @@
     }
   }
   
+  &__row:first-child &__col {
+    @media (min-width: $w1200) {
+      border-top: none;
+    }
+  }
+
+  .matches-full  &__row:first-child &__col {
+    @media (min-width: $w1200) {
+      border-top: 1px solid $table-border;
+    }
+  }
+  
   &__date {
     margin-top: 15px;
     font-size: 12px;

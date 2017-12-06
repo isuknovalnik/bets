@@ -86,6 +86,12 @@
     }
   }
   
+  &__row:first-child &__col {
+    @media (min-width: $w1200) {
+      border-top: none;
+    }
+  }
+  
   &__date {
     margin-top: 15px;
     font-size: 12px;
