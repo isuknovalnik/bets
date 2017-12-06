@@ -1,0 +1,35 @@
+.rating-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 27px;
+  font-size: 0;
+  color: $rating-headers;
+  background-color: $rating-overview-back;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  
+  @media (min-width: $mob) {
+    width: 90px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $rating-overview-text;
+  }
+  
+  &:hover {
+    color: $hover-color;
+    background-color: $bets-yellow;
+  }
+
+  
+  &__symbol {
+    fill: currentColor;
+    
+    @media (min-width: $mob) {
+      display: none;
+    }
+  }
+}

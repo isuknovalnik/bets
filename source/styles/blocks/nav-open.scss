@@ -1,0 +1,21 @@
+.nav-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  font-size: 0;
+  color: $header-color;
+  
+  @media (min-width: $mob) {
+    display: none;
+  }
+  
+  &:hover {
+    color: $bets-yellow;
+  }
+  
+  &__symbol {
+    fill: currentColor;
+  }
+}

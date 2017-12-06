@@ -1,0 +1,291 @@
+.news-card {
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  background-color: $card-back;
+  
+  @media (min-width: $mob) {
+    width: 275px;
+    height: 400px;
+    margin: 0;
+  }
+  
+  &_wide {
+    position: relative;
+    height: 352px;
+    background-image: linear-gradient(to bottom, transparent 11px, $card-pict-back 11px, $card-pict-back 227px, transparent 227px );
+    
+    @media (min-width: $mob) {
+      width: 562px;
+      height: 400px;
+      background-color: $card-pict-back;
+      background-image: none;
+    }
+  }
+  
+  &_no-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  &_big-picture {
+    position: relative;
+    
+    &:before {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 170px;
+      background-image: linear-gradient(to top, $card-pict-back 70px, transparent 170px);
+      opacity: 0.8;
+    }
+  }
+
+  &__label {
+    width: 80px;
+    height: 17px;
+    padding: 0;
+    margin: 12px auto 11px;;
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: $card-heading;
+    background-color: $bets-yellow;
+  }
+  
+  &_wide &__label {
+    position: absolute;
+    top: 29px;
+    left: 109px;
+    margin: 0;
+    
+    @media (min-width: $mob) {
+      top: 96px;
+      left: 237px;
+    }
+  }
+  
+  &_big-picture &__label {
+    position: absolute;
+    z-index: 5;
+    top: 28px;
+    left: 0;
+    margin: 0;
+  }
+  
+  &_no-picture &__label {
+    margin: 0;
+    margin-top: 51px;
+  }
+  
+  &__title {
+    width: 230px;
+    height: 72px;
+    padding: 0;
+    margin: 0 auto 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: $card-heading;
+    overflow: hidden;
+  }
+  
+  &_wide &__title {
+    position: absolute;
+    top: 68px;
+    left: 10px;
+    width: 280px;
+    margin: 0;
+    font-size: 24px;
+    color: $card-heading-light;
+    
+    @media (min-width: $mob) {
+      top: 125px;
+      left: 74px;
+      width: 414px;
+      height: 48px;
+    }
+  }
+  
+  &_big-picture &__title {
+    position: absolute;
+    z-index: 5;
+    left:30px;
+    top: 308px;
+    width: 214px;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+    color: $card-heading-light;
+
+    @media (min-width: $mob) {
+      left: 20px;
+    }
+  }
+  
+  &_no-picture &__title {
+    margin: 0;
+    margin-top: 12px;
+    font-size: 18px;
+  }
+  
+  &__date {
+    width: 110px;
+    max-height: 24px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 11px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: $card-heading;
+    overflow: hidden;
+  }
+  
+  &_wide &__date {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    width: 120px;
+    font-size: 12px;
+    color: $card-heading-light;
+    
+    @media (min-width: $mob) {
+      top: 182px;
+      left: 220px;
+    }
+  }
+  
+  &_big-picture &__date {
+    position: absolute;
+    z-index: 5;
+    left:30px;
+    top: 282px;
+    font-size: 12px;
+    width: 120px;
+    text-align: left;
+    color: $card-heading-light;
+    
+    @media (min-width: $mob) {
+      left: 20px;
+    }
+  }
+  
+   &_no-picture &__date {
+    margin-top: 46px;
+    order: 5;
+  }
+
+  &__pict {
+    width: 300px;
+    height: 228px;
+    
+    @media (min-width: $mob) {
+      width: 275px;
+      height: 228px;
+    }
+  }
+  
+  &_wide &__pict {
+    padding-top: 13px;
+    width: 300px;
+    height: 214px;
+    opacity: 0.6;
+    
+    @media (min-width: $mob) {
+      padding: 0;
+      width: 562px;
+      height: 400px;
+    }
+  }
+  
+  &_big-picture &__pict {
+    width: 300px;
+    height: 400px;
+    
+    @media (min-width: $mob) {
+      width: 275px;
+      height: 400px;
+    }
+  }
+  
+  &_wide &__tags {
+    display: flex;
+    width: 220px;
+    margin: 16px auto 10px;
+    max-height: 24px;
+    overflow: hidden;
+    
+    @media (min-width: $mob) {
+      position: absolute;
+      top: 244px;
+      left: 170px;
+      margin: 0;
+    }
+  }
+  
+   &_no-picture &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+    max-height: 48px;
+    overflow: hidden;
+  }
+  
+  &__tag {
+    margin: 0;
+    padding: 0;
+    margin-right: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: italic;
+    color: $tags-color;
+  }
+  
+  &__descr {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: $card-text;
+  }
+  
+  &_wide &__descr {
+    width: 248px;
+    max-height: 48px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    @media (min-width: $mob) {
+      position: absolute;
+      top: 330px;
+      left: 80px;
+      width: 390px;
+      color: $card-text-light;
+    }
+  }
+  
+  &_no-picture &__descr {
+    width: 248px;
+    margin-top: 28px;
+    overflow: hidden;
+  }
+}

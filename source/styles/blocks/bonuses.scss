@@ -1,0 +1,54 @@
+.bonuses {
+  display: block;
+  min-height: 754px;
+  margin: 0 auto;
+  
+  @media (min-width: $mob) {
+    max-width: $desktop;
+    min-height: 740px;
+    margin: 0;
+  }
+  
+  &__articles-wrap {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-content: space-between;
+      flex-wrap: wrap;
+      width: 275px;
+      height: 572px;
+    }
+    
+    @media (min-width: $w900) {
+      width: 564px;
+    }
+    
+    @media (min-width: $w1200) {
+      width: 853px;
+    }
+  }
+  
+  &__articles-wrap .bonus-card {
+    &:nth-child(3),
+    &:nth-child(4) {
+      display: none;
+
+      @media (min-width: $w900) {
+        display: block;
+      }
+    }
+    
+    &:nth-child(n+5) {
+      display: none;
+
+      @media (min-width: $w1200) {
+        display: block;
+      }
+    }
+  }
+}

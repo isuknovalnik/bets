@@ -1,0 +1,156 @@
+.footer {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  min-height: 974px;
+  margin: 0;
+  padding: 0;
+  color: $footer-color;
+  background-color: $footer-back;
+  background-image: url('../images/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  
+  @media (min-width: $mob) {
+    min-height: 492px;
+  }
+
+  &__upper-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    min-height: 200px;
+    margin: 0 auto;
+    
+    @media (min-width: $mob) {
+      justify-content: space-around;
+      width: 100%;
+      min-height: 148px;
+      max-width: $desktop;
+    }
+    
+    @media (min-width: $w1200) {
+      justify-content: space-between;
+    }
+    
+    & .footer-logo {
+      margin: 33px calc((100% - 140px)/2) 15px;
+      
+      @media (min-width: $mob) {
+        margin: 38px 0 0;
+      }
+    }
+    
+    & .social-links {
+      margin: 0 calc((100% - 130px)/2);
+      
+      @media (min-width: $mob) {
+        margin-top: 62px;
+        margin-left: 0;
+        margin-right: -14px;
+      }
+    }
+
+  }
+
+  &__links-wrap {
+    display: block;
+    margin: 0;
+    margin-left: 15px;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 700px;
+      max-width: $desktop;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: $w1200) {
+      justify-content: space-between;
+      width: $desktop;
+    }
+    
+    & .footer-links {
+      margin-bottom: 12px;
+      
+      &:nth-child(4) {
+        margin-bottom: 8px;
+      }
+    }
+    
+    & .download-links {
+      margin-left: -2px;
+      
+      @media (min-width: $mob) {
+        margin-top: 10px;
+        margin-left: 30px;
+      }
+      
+      @media (min-width: $w1200) {
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+  }
+  
+  &__lower-links-wrap {
+    display: block;
+    min-height: 68px;
+    margin-left: 15px;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 380px;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-left: calc((100% - 1140px)/2);
+    }
+    
+    & .footer-link {
+      padding-top: 12px;
+      
+      @media (min-width: $mob) {
+        padding-top: 0;
+      }
+    }
+  }
+  
+  &__lower-wrap {
+    display: block;
+    width: 90.625%;
+    margin: 0 15px;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 35px;
+      max-width: $desktop;
+    }
+    
+    @media (min-width: $w1200) {
+      width: $desktop;
+      padding-bottom: 0;
+    }
+
+    & .age-label {
+      @media (min-width: $mob) {
+        margin-top: 3px;
+      }
+    }
+    
+    & .edition-descr {
+      margin-bottom: 14px;
+    }
+  }
+}

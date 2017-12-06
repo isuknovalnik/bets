@@ -1,0 +1,166 @@
+.forecasts-table {
+  display: table;
+  width: 300px;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  @media (min-width: $w900) {
+    width: 564px;
+  }
+  
+  @media (min-width: $w1200) {
+    width: 853px;
+  }
+  
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 152px;
+    border-bottom: 1px solid $table-border;
+    
+    @media (min-width: $w900) {
+      min-height: 130px;
+    }
+
+    @media (min-width: $w1200) {
+      display: table-row;
+      border-bottom: none;
+    }
+  }
+  
+  &__col {
+    border-collapse: collapse;
+    
+    @media (min-width: $w1200) {
+      height: 66px;
+      border-bottom: 1px solid $table-border;
+      border-top: 1px solid $table-border;
+    }
+    
+    &_1 {
+      margin-right: calc(100% - 84px);
+      
+      @media (min-width: $w900) {
+        margin-right: 30px;
+        margin-left: 50px;
+      }
+      
+      @media (min-width: $w1200) {
+        width: 104px;
+        margin-right: 0;
+        margin-left: 0;
+        border-left: 1px solid $table-border;
+      }
+    }
+    
+    &_3 {
+      margin-right: calc(100% - 290px);
+      
+      @media (min-width: $w900) {
+        margin-left: 30px;
+        margin-right: 70px;
+      }
+      
+      @media (min-width: $w1200) {
+        width: 348px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    
+    &_4 {
+      @media (min-width: $w900) {
+        margin-left: 50px;
+      }
+      
+      @media (min-width: $w1200) {
+        margin-left: 0;
+      }
+      
+    }
+    
+    &_6 {
+      @media (min-width: $w1200) {
+        border-right: 1px solid $table-border;
+      }
+    }
+  }
+  
+  &__date {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: $table-text;
+    
+    @media (min-width: $w1200) {
+      margin-top: 0;
+    }
+  }
+  
+  &__time {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: $bets-yellow;
+  }
+  
+  &__pict {
+    width: 44px;
+    
+    @media (min-width: $w900) {
+      margin-top: 15px;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-top: 0;
+    }
+
+  }
+  
+  &__title {
+    margin-top: 10px;
+    margin-left: 9px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $table-text;
+    
+    @media (min-width: $w900) {
+      font-size: 16px;
+      margin-top: 25px;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-top: 0;
+    }
+  }
+  
+  &__descr {
+    margin-left: 9px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $table-light-text;
+  }
+  
+  &__ratio {
+    margin-right: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $table-text;
+    
+    @media (min-width: $w900) {
+      margin-right: 40px;
+    }
+  }
+  
+  &__ratio-descr {
+    margin-right: 12px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $table-text;
+  }
+}
+

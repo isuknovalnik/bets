@@ -1,0 +1,78 @@
+.bonus-card {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  background-color: $card-pict-back;
+  
+  @media (min-width: $mob) {
+    width: 275px;
+    height: 280px;
+    margin: 0;
+  }
+
+  &__pict {
+    width: 300px;
+    height: 280px;
+    opacity: 0.7;
+    
+    @media (min-width: $mob) {
+      width: 275px;
+      height: 280px;
+    }
+  }
+  
+  &__logo {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 60px;
+    height: 20px;
+    border-top: 4px solid $card-back;
+    border-bottom: 5px solid $card-back;
+    border-right: 17px solid $card-back;
+    border-left: 11px solid $card-back;
+  }
+  
+  &__value {
+    position: absolute;
+    top: 18px;
+    right: 27px;
+    width: 120px;
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: right;
+    color: $bets-yellow;
+    
+    @media (min-width: $mob) {
+      right: 14px;
+    }
+    
+    &_empty {
+      display: none;
+    }
+  }
+  
+  &__descr {
+    position: absolute;
+    top: 194px;
+    left: 30px;
+    width: 220px;
+    max-height: 66px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $card-heading-light;
+    overflow: hidden;
+    
+    @media (min-width: $mob) {
+      left: 20px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.expand-btn {
+  display: block;
+  width: 172px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  padding-top: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $expand-btn-color;
+  border: 1px solid $bets-yellow;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: $bets-yellow;
+  }
+  
+  &__symbol {
+    width: 15px;
+    height: 17px;
+    margin-right: 10px;
+    margin-bottom: -2px;
+    fill: $bets-yellow;
+  }
+  
+  &:hover &__symbol {
+    fill: $expand-btn-color;
+  }
+}

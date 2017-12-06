@@ -1,0 +1,118 @@
+.slide {
+  position: relative;
+  min-width: 320px;
+  min-height: 297px;
+  background-color: $slider-back;
+
+  @media (min-width: $mob) {
+    min-height: 600px;
+    max-width: 1155px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 297px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    opacity: 0.5;
+    
+    @media (min-width: $mob) {
+      height: 600px;
+      width: 100%;
+      background-position: bottom center;
+      background-size: auto;
+    }
+  }
+  
+  &_1:before {
+    background-image: url('../images/slide-back-mob.jpg');
+
+    @media (min-width: $mob) {
+      background-image: url('../images/slide-back.jpg');
+    }
+  }
+  
+  &__title {
+    position: absolute;
+    z-index: 2;
+    top: 103px;
+    left: 39px;
+    width: 230px;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 900;
+    color: $header-color;
+    
+    @media (min-width: $mob) {
+      top: 153px;
+      left: 102px;
+      width: 580px;
+      font-size: 90px;
+      line-height: 100px;
+    }
+  }
+  
+  &__btn {
+    position: absolute;
+    z-index: 3;
+    top: 177px;
+    left: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $slider-btn;
+    background-color: $bets-yellow;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    
+    @media (min-width: $mob) {
+      top: 364px;
+      left: 110px;
+      width: 186px;
+      height: 46px;
+      border-radius: 25px;
+      
+    }
+    
+    &:hover {
+      background-color: $bets-yellow-light;
+    }
+  }
+  
+  &__counter {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: 100;
+    color: $header-color;
+    
+    @media (min-width: $mob) {
+      top: 18px;
+      right: 22px;
+    }
+  }
+  
+  &__current {
+    color: $bets-yellow;
+  }
+  
+  &_2,
+  &_3,
+  &_4 {
+    display: none;
+  }
+}
+

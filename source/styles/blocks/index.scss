@@ -1,0 +1,122 @@
+.index {
+  display: block;
+  min-width: 320px;
+  width: 100%;
+
+  &__banner {
+    display: block;
+    background-color: $rating-back;
+    
+    @media (min-width: $w1550) {
+      display: flex;
+      margin: 0 auto;
+      max-width: $hd;
+    }
+  }
+  
+  &__banner-wrap {
+    display: block;
+    width: 100%;
+    background-color: $rating-back;
+  }
+  
+  &__news {
+    display: block;
+    width: 100%;
+    background-color: $section-back;
+  }
+  
+  &__betting-news {
+    display: block;
+    width: 100%;
+    background-color: $section-back;
+  }
+  
+  &__forecasts-wrap {
+    display: block;
+    width: 100%;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      width: 595px;
+      max-width: $desktop;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: $w900) {
+      width: 859px;
+    }
+
+    @media (min-width: $w1200) {
+      width: $desktop;
+    }
+  }
+  
+  &__video-wrap {
+    display: block;
+    width: 100%;
+    background-color: $video-back;
+    background-image: url('../images/video-bg.jpg');
+    background-repeat: repeat;
+    background-position: top left;
+  }
+
+  &__matches-wrap {
+    display: block;
+    width: 100%;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      width: 595px;
+      min-height: 1100px;
+      max-width: $desktop;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: $w900) {
+      min-height: 1210px;
+      width: 859px;
+    }
+
+    @media (min-width: $w1200) {
+      min-height: 710px;
+      width: $desktop;
+    }
+  }
+  
+  &__bonuses-wrap {
+    display: block;
+    width: 100%;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      width: 570px;
+      max-width: $desktop;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: $w900) {
+      width: 859px;
+    }
+
+    @media (min-width: $w1200) {
+      width: $desktop;
+    }
+  }
+  
+  & .editors-choice {
+    display: block;
+    width: 320px;
+    min-height: 770px;
+    margin: 0 auto;
+    
+    @media (min-width: $mob) {
+      width: 275px;
+      margin: 0;
+    }
+  }
+  
+}

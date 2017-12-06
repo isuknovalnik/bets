@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fecc00">
+    <title>bets-forecasts</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="styles/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
+      <!-- inject:svg --><!-- endinject -->
+    </div>
+    <header class="header">
+      <div class="header__upper-wrap">
+        <a class="nav-open" href="#"><svg width="26" height="18" class="nav-open__symbol"><use xlink:href="#burger"></use></svg>Меню</a>
+        <div class="logo">
+          <div class="logo__top-text">ТОП<span class="logo__colored-text">50</span></div>
+          <div class="logo__bottom-text">букмекеров</div>
+          <svg width="54" height="52" class="logo__symbol"><use xlink:href="#star"></use></svg>
+        </div>
+        <ul class="main-nav main-nav_mob-closed">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">НОВОСТИ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">РЕЙТИНГ БУКМЕКЕРОВ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">ПРОГНОЗЫ НА СПОРТ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">ШКОЛА СТАВОК</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">ВОПРОС-ОТВЕТ</a></li>
+        </ul>
+        <a class="search search_mob-closed" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg>Поиск по сайту</a>
+        <a class="login" href="#"><svg width="20" height="25" class="login__symbol"><use xlink:href="#user"></use></svg>Войти</a>
+      </div>
+      <div class="header__nav-wrap header__nav-wrap_closed">
+        <ul class="bookies-nav">
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="21" height="20" class="bookies-nav__symbol bookies-nav__symbol_growth"><use xlink:href="#growth"></use></svg>РЕЙТИНГ БУКМЕКЕРОВ</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="19" height="24" class="bookies-nav__symbol bookies-nav__symbol_like"><use xlink:href="#like"></use></svg>Народный рейтинг</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="19" height="20" class="bookies-nav__symbol bookies-nav__symbol_badge"><use xlink:href="#badge"></use></svg>Легальные букмекеры</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="12" height="21" class="bookies-nav__symbol bookies-nav__symbol_smartphone"><use xlink:href="#smartphone"></use></svg>Букмекеры на мобильном</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="19" height="21" class="bookies-nav__symbol bookies-nav__symbol_gift"><use xlink:href="#gift"></use></svg>Букмекеры с бонусами</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="forecasts-page">
+      <h1 class="page-header">Прогнозы</h1>
+      <div class="forecasts-page__wrap">
+        <div class="forecasts-full">
+          <div class="forecasts-full__intro">
+            <p>Впервые использовать данную теорию в букмекерских конторах предложили в 2007 году игроки Арчонтакис и Осборн. Они утверждали, что эта тактика будет работать в ставках на ничьи с коэффициентами от 2.618 и более.</p>
+            <p>Стратегия не беспроигрышная, ведь для этого необходимо выполнение двух условий: бесконечный игровой банк и отсутствие лимитов в букмекерской конторе.</p>
+          </div>
+          <div class="events-filter">
+            <form action="#" method="get" class="events-filter__form">
+              <div class="events-filter__title">Матчи:</div>
+              <div class="events-filter__select-wrap">Футбол
+                <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
+                  <option value="soccer" class="events-filter__option" selected>Футбол</option>
+                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
+              </div>
+              <div class="events-filter__select-wrap">Все лиги
+                <select name="league" id="league" class="events-filter__select">
+                  <option value="all" class="events-filter__option" selected>Все лиги</option>
+                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
+              </div>
+            </form>
+            <div class="events-filter__types">
+              <div class="events-filter__type events-filter__type_selected">Все</div>
+              <div class="events-filter__type">Будущие</div>
+              <div class="events-filter__type">Завершённые</div>
+            </div>
+          </div>
+          <table class="forecasts-table">
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+            <tr class="forecasts-table__row">
+              <td class="forecasts-table__col forecasts-table__col_1">
+                <div class="forecasts-table__date">29 октября</div>
+                <div class="forecasts-table__time">16:30</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_2">
+                <img src="images/forecast-emblem.png" width="44" class="forecasts-table__pict" alt=""/>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_3">
+                <div class="forecasts-table__title">«Зенит» – «Локомотив»</div>
+                <div class="forecasts-table__descr">Футбол / Россия / Премьер Лига</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_4">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">1</span>3.88</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_5">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">x</span>3.80</div>
+              </td>
+              <td class="forecasts-table__col forecasts-table__col_6">
+                <div class="forecasts-table__ratio"><span class="forecasts-table__ratio-descr">2</span>2.03</div>
+              </td>
+            </tr>
+          </table>
+         
+          <a class="expand-btn" href="#"><svg width="15" height="17" class="expand-btn__symbol"><use xlink:href="#reload"></use></svg>Показать еще</a>
+        </div>
+        <div class="forecasts-page__sidebar">
+          <section class="editors-choice">
+            <h2 class="section-heading section-heading_small">Выбор редакции</h2>
+            <article class="editors-card">
+              <img src="images/editors-1.jpg" width="70" height="70" class="editors__pict" alt=""/>
+              <div class="editors-card__wrap">
+                <h3 class="editors-card__title">БК «Леон» приветствует борьбу с договорными матчами</h3>
+                <div class="editors-card__date">3 дня назад</div>
+              </div>
+            </article>
+            <article class="editors-card">
+              <img src="images/editors-2.jpg" width="70" height="70" class="editors__pict" alt=""/>
+              <div class="editors-card__wrap">
+                <h3 class="editors-card__title">БК «Леон» приветствует борьбу с договорными матчами</h3>
+                <div class="editors-card__date">3 дня назад</div>
+              </div>
+            </article>
+            <article class="editors-card">
+              <img src="images/editors-3.jpg" width="70" height="70" class="editors__pict" alt=""/>
+              <div class="editors-card__wrap">
+                <h3 class="editors-card__title">БК «Леон» приветствует борьбу с договорными матчами</h3>
+                <div class="editors-card__date">3 дня назад</div>
+              </div>
+            </article>
+            <article class="editors-card">
+              <img src="images/editors-1.jpg" width="70" height="70" class="editors__pict" alt=""/>
+              <div class="editors-card__wrap">
+                <h3 class="editors-card__title">БК «Леон» приветствует борьбу с договорными матчами</h3>
+                <div class="editors-card__date">3 дня назад</div>
+              </div>
+            </article>
+            <article class="editors-card">
+              <img src="images/editors-2.jpg" width="70" height="70" class="editors__pict" alt=""/>
+              <div class="editors-card__wrap">
+                <h3 class="editors-card__title">БК «Леон» приветствует борьбу с договорными матчами</h3>
+                <div class="editors-card__date">3 дня назад</div>
+              </div>
+            </article>
+            <article class="editors-card">
+              <img src="images/editors-3.jpg" width="70" height="70" class="editors__pict" alt=""/>
+              <div class="editors-card__wrap">
+                <h3 class="editors-card__title">БК «Леон» приветствует борьбу с договорными матчами</h3>
+                <div class="editors-card__date">3 дня назад</div>
+              </div>
+            </article>
+          </section>
+          <section class="vk-vidget">
+            <img src="images/vk-dummy.jpg" width="280" height="505" class="vk-vidget__dummy-pict" alt=""/>
+          </section>
+          <section class="advert-narrow">
+            <img src="images/advert-narrow.jpg" width="277" height="586" class="advert-narrow__pict" alt=""/>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__upper-wrap">
+        <div class="footer-logo">
+          <div class="footer-logo__top-text">ТОП<span class="footer-logo__colored-text">50</span></div>
+          <div class="footer-logo__bottom-text">букмекеров</div>
+          <svg width="83" height="80" class="footer-logo__symbol"><use xlink:href="#star"></use></svg>
+        </div>
+        <div class="social-links">
+          <a class="social-links__link" href="#"><svg width="17" height="14" class="social-links__symbol"><use xlink:href="#twitter"></use></svg>twitter</a>
+          <a class="social-links__link" href="#"><svg width="22" height="13" class="social-links__symbol"><use xlink:href="#vk"></use></svg>vkontakte</a>
+        </div>
+      </div>
+      <div class="footer__links-wrap">
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading">РЕЙТИНГ БУКМЕКЕРОВ</a>
+          <a href="#" class="footer-links__link">Народный рейтинг</a>
+          <a href="#" class="footer-links__link">Легальные букмекеры</a>
+          <a href="#" class="footer-links__link">Букмекеры на мобильном</a>
+          <a href="#" class="footer-links__link">Букмекеры с бонусами</a>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading">Прогнозы на спорт</a>
+          <a href="#" class="footer-links__link">Прогнозы на футбол</a>
+          <a href="#" class="footer-links__link">Прогнозы на хоккей</a>
+          <a href="#" class="footer-links__link">Прогнозы на теннис</a>
+          <a href="#" class="footer-links__link">Прогнозы на баскетбол</a>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading">Новости</a>
+          <a href="#" class="footer-links__link">Новости беттинга</a>
+          <a href="#" class="footer-links__link">Анонсы матчей</a>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading">Школа ставок</a>
+        </div>
+        <div class="download-links">
+          <a href="#" class="download-links__link download-links__link_google">Google Play</a>
+          <a href="#" class="download-links__link download-links__link_apple">AppStore</a>
+        </div>
+      </div>
+      <div class="footer__lower-links-wrap">
+        <a href="#" class="footer-link">Контакты</a>
+        <a href="#" class="footer-link">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__lower-wrap">
+        <div class="edition-descr">
+          <p class="edition-descr__text">Сетевое издание «ТОП50 букмекеров» зарегистрировано в Федеральной службе по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 1 ноября 2017 года. Свидетельство о регистрации ЭЛ № ФС 77 - 71481</p>
+          <p class="edition-descr__text">© 2015 - 2017 независимый рейтинг букмекеров от </p>
+        </div>
+        <div class="age-label">+18</div>
+      </div>
+    </footer>
+    <script src="scripts/script.min.js"></script>
+  </body>
+
+</html>

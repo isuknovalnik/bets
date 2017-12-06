@@ -1,0 +1,167 @@
+.matches-table {
+  display: table;
+  width: 300px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  
+  @media (min-width: $w900) {
+    width: 564px;
+  }
+  
+  @media (min-width: $w1200) {
+    width: 853px;
+  }
+  
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 190px;
+    border-bottom: 1px solid $table-border;
+    
+    @media (min-width: $w1200) {
+      display: table-row;
+      border-bottom: none;
+    }
+   }
+  
+  &__col {
+    border-collapse: collapse;
+    
+    @media (min-width: $w1200) {
+      height: 66px;
+      border-bottom: 1px solid $table-border;
+      border-top: 1px solid $table-border;
+    }
+    
+    &_1 {
+      margin-right: calc((100% - 84px)/2);
+      margin-left: calc((100% - 84px)/2);
+      
+      @media (min-width: $w1200) {
+        width: 104px;
+        margin: 0;
+        border-left: 1px solid $table-border;
+      }
+    }
+    
+    &_7 {
+      margin-left: calc((100% - 220px)/2);
+      
+      @media (min-width: $w1200) {
+        margin: 0;
+      }
+    }
+    
+    &_9 {
+      margin-right: calc((100% - 220px)/2);
+      
+      @media (min-width: $w1200) {
+        margin: 0;
+        border-right: 1px solid $table-border;
+      }
+    }
+  }
+  
+  &__date {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: $table-text;
+    
+    @media (min-width: $w1200) {
+      margin-top: 0;
+    }
+  }
+  
+  &__time {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    color: $bets-yellow;
+  }
+  
+  &__ratio {
+    margin-right: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $table-text;
+    
+    @media (min-width: $w1200) {
+      width: 64px;
+      margin-right: 0;
+    }
+  }
+
+  &__col_9 &__ratio {
+    margin-right: 0;
+  }
+  
+  &__ratio-descr {
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $table-text;
+  }
+  
+  &__player {
+    width: 76px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $table-text;
+    
+    @media (min-width: $w900) {
+      width: 180px;
+    }
+    
+    &_1 {
+      margin-right: 4px;
+      text-align: right;
+      
+      @media (min-width: $w900) {
+        margin-right: 10px;
+      }
+      
+      @media (min-width: $w1200) {
+        width: 200px;
+        margin: 0;
+      }
+      
+    }
+    
+    &_2 {
+      margin-left: 10px;
+      
+      @media (min-width: $w1200) {
+        margin: 0;
+      }
+    }
+  }
+  
+  &__pict {
+    width: 35px;
+  }
+  
+  &__result {
+    width: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: $table-text;
+    
+    @media (min-width: $w900) {
+      width: 60px;
+    }
+    
+    @media (min-width: $w1200) {
+      width: 56px;
+    }
+
+  }
+
+}

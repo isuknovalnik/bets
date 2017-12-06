@@ -1,0 +1,46 @@
+.video-link {
+  position: relative;
+  display: flex;
+  width: 290px;
+  min-height: 35px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding-top: 15px;
+  padding-left: 14px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $video-heading;
+  
+  @media (min-width: $mob) {
+    width: 170px;
+    min-height: 70px;
+    margin: 0;
+  }
+  
+  &:before {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    background-color: $video-symbol;
+    border: 1px solid transparent;
+    border-radius: 50%;
+  }
+  
+  &__symbol {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    width: 16px;
+    height: 12px;
+    fill: $video-heading;
+    margin-right: 22px;
+  }
+  
+}

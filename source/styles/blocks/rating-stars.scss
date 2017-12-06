@@ -1,0 +1,19 @@
+.rating-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 73px;
+  height: 15px;
+  color: $rating-stars;
+  
+  &__symbol {
+    width: 13px;
+    height:13px;
+    fill: currentColor;
+    
+    &_marked {
+      fill: $bets-yellow;
+    }
+  }
+}
+

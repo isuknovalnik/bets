@@ -1,0 +1,95 @@
+.footer-links {
+  display: block;
+  padding: 0;
+  margin: 0;
+  
+  @media (min-width: $mob) {
+    flex-shrink: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  &:nth-child(1) {
+    @media (min-width: $mob) {
+      flex-basis: 220px;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+  }
+  
+  &:nth-child(2) {
+    @media (min-width: $mob) {
+      flex-basis: 200px;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-right: 40px;
+      margin-left: 0;
+    }
+  }
+  
+  &:nth-child(3) {
+    @media (min-width: $mob) {
+      flex-basis: 160px;
+      margin-top: 20px;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-right: 90px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+  
+  &:nth-child(4) {
+    @media (min-width: $mob) {
+      flex-basis: 120px;
+      margin-top: 20px;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-right: 120px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+  
+  &__heading {
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $footer-links-heading;
+    
+    &:hover {
+      color: $bets-yellow;
+    }
+  }
+  
+  &__link {
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 8px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $footer-links;
+    
+    @media (min-width: $mob) {
+      font-size: 16px;
+    }
+    
+    &:hover {
+      color: $bets-yellow;
+    }
+  }
+}

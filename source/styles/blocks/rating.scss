@@ -1,0 +1,97 @@
+.rating {
+  display: block;
+  width: 100%;
+  width: 320px;
+  min-height: 495px;
+  margin: 0 auto;
+  color: $rating-color;
+  background-color: $rating-back;
+  background-image: url('../images/rating-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  
+  @media (min-width: $mob) {
+    min-height: 600px;
+    width: 765px;
+  }
+  
+  @media (min-width: $desktop) {
+    flex-shrink: 0;
+    flex-basis: 735px;
+  }
+    
+  @media (min-width: $desktop-w) {
+    flex-basis: 765px;
+  }
+  
+  &__upper-wrap {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__feedback-wrap {
+    display: flex;
+    justify-content: space-between;
+    
+    @media (min-width: $mob) {
+      min-width: 290px;
+    }
+  }
+  
+  &__heading {
+    margin: 0;
+    padding: 0;
+    color: $rating-headers;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    
+    @media (min-width: $mob) {
+      margin-bottom: 0;
+      margin-top: 14px;
+    }
+  }
+  
+  &__all-lnk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 30px;
+    margin-top: 14px;
+    color: $rating-headers;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid $rating-lnk-border;
+    border-radius: 16px;
+    
+    @media (min-width: $mob) {
+      margin-top: 10px;
+      margin-left: 26px;
+    }
+    
+    &:hover {
+      color: $hover-color;
+      background-color: $bets-yellow;
+      border-color: $bets-yellow;
+    }
+
+
+  }
+}
+

@@ -1,0 +1,46 @@
+.matches {
+  display: block;
+  min-height: 1068px;
+  margin: 0 auto;
+
+  @media (min-width: $mob) {
+    min-height: 1100px;
+    margin: 0;
+    width: 300px;
+  }
+
+  @media (min-width: $w900) {
+    min-height: 1210px;
+    width: 564px;
+  }
+
+  @media (min-width: $w1200) {
+    width: 853px;
+    min-height: 710px;
+  }
+  
+  & .matches-table__row {
+    
+    &:nth-child(5) {
+      display: none;
+      
+      @media (min-width: $w900) {
+        display: flex;
+      }
+      
+      @media (min-width: $w1200) {
+        display: table-row;
+      }
+    }
+    
+    &:nth-child(n+6) {
+      display: none;
+      
+      @media (min-width: $w1200) {
+        display: table-row;
+      }
+    }
+  }
+}
+
+

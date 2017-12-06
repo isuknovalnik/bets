@@ -1,0 +1,39 @@
+.clip {
+  display: block;
+  width: 300px;
+  height: 253px;
+  margin: 0 auto 12px;
+  
+  @media (min-width: $mob) {
+    width: 360px;
+    height: 313px;
+    margin: 0;
+  }
+  
+  &__dummy-pict {
+    width: 300px;
+    height: 193px;
+    
+    @media (min-width: $mob) {
+      width: 360px;
+      height: 233px;
+    }
+  }
+  
+  &__descr {
+    width: 300px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    margin-top: 6px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $video-text;
+    overflow: hidden;
+    
+    @media (min-width: $mob) {
+      margin-top: 16px;
+    }
+  }
+}

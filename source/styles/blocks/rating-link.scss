@@ -1,0 +1,32 @@
+.rating-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 27px;
+  font-size: 0;
+  color: $rating-link;
+  background-color: $bets-yellow;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  
+  @media (min-width: $mob) {
+    width: 102px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  &:hover {
+    background-color: $bets-yellow-light;
+  }
+  
+  &__symbol {
+    fill: currentColor;
+    
+    @media (min-width: $mob) {
+      display: none;
+    }
+  }
+}

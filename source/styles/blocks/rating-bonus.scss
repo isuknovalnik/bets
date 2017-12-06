@@ -1,0 +1,21 @@
+.rating-bonus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90px;
+  
+  &__title {
+    color: $rating-color;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  &__value {
+    color: $rating-bonus;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

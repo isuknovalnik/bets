@@ -1,0 +1,14 @@
+.age-label {
+  flex-shrink: 0;
+  display: block;
+  width: 102px;
+  height: 57px;
+  padding-top: 16px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  text-align: center;
+  color: $age-label-color;
+  border: 1px solid $age-label-border;
+
+}

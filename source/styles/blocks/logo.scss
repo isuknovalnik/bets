@@ -1,0 +1,56 @@
+.logo {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100px;
+  height: 60px;
+  color: currentColor;
+  font-weight: 500;
+  
+  @media (min-width: $mob) {
+    width: 140px;
+    height: 86px;
+  }
+  
+  &__top-text {
+    padding-top: 16px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    
+    @media (min-width: $mob) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+  
+  &__bottom-text {
+    font-size: 11px;
+    text-align: center;
+    
+    @media (min-width: $mob) {
+      font-size: 16px;
+    }
+  }
+  
+  &__colored-text {
+    color: $bets-yellow;
+  }
+  
+  &__symbol {
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    right: 0;
+    width: 54px;
+    height: 52px;
+    fill: $logo-star-color;
+    
+    @media (min-width: $mob) {
+      top: -5px;
+      right: -3px;
+      width: 83px;
+      height: 80px;
+    }
+  }
+}

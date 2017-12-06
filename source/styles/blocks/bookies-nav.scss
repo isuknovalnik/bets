@@ -1,0 +1,100 @@
+.bookies-nav {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: $menu-back;
+  min-height: 210px;
+  list-style: none;
+  
+  @media (min-width: $mob) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+    min-height: 112px;
+    
+    @media (min-width: $w1200) {
+      justify-content: space-between;
+      width: $desktop;
+      min-height: 54px;
+    }
+  }
+  
+  &__item {
+    display: block;
+    min-height: 30px;
+    padding-top: 16px;
+    
+    @media (min-width: $mob) {
+      margin-left: 70px;
+      width: auto;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-left: 0;
+    }
+    
+    &:first-of-type {
+      @media (min-width: $mob) {
+        margin-left: 37px;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    color: $header-color;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  &__symbol {
+    position: absolute;
+    left: -32px;
+    top: -8px;
+    
+    &_growth {
+      left: -37px;
+      top: -4px;
+      width: 21px;
+      height: 20px;
+      fill: $bets-yellow;
+    }
+    
+    &_like {
+      left: -35px;
+      top: -8px;
+      width: 19px;
+      height: 24px;
+      fill: $icon-like-color;
+    }
+    
+    &_badge {
+      left: -35px;
+      top: -4px;
+      width: 19px;
+      height: 20px;
+      fill: $icon-badge-color;
+    }
+    
+    &_smartphone {
+      left: -32px;
+      top: -5px;
+      width: 12px;
+      height: 21px;
+      fill: $icon-phone-color;
+    }
+    
+    &_gift {
+      left: -35px;
+      top: -5px;
+      width: 19px;
+      height: 21px;
+      fill: $icon-gift-color;
+    }
+  }
+}

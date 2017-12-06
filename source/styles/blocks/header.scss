@@ -1,0 +1,91 @@
+.header {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  min-height: 66px;
+  color: $header-color;
+  background-color: $header-back;
+  
+  @media (min-width: $mob) {
+    min-height: 168px;
+  }
+
+  &__upper-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 66px;
+    background-color: $header-back;
+    
+    @media (min-width: $mob) {
+      position: static;
+      justify-content: space-around;
+      min-height: 114px;
+      max-width: $desktop;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: $w1200) {
+      justify-content: space-between;
+    }
+  }
+  
+  & .logo {
+    margin-top: 2px;
+    color: $header-color;
+  }
+  
+  & .nav-open {
+    @media (min-width: $mob) {
+      display: none;
+    }
+  }
+  
+  &__nav-wrap {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $menu-back;
+    
+    @media (min-width: $mob) {
+      margin: 0;
+    }
+  }
+  
+  &__nav-wrap .bookies-nav {
+    margin-top: 8px;
+    margin-left: 60px;
+    
+    @media (min-width: $mob) {
+      margin: 0 auto;
+    }
+  }
+  
+  &__nav-wrap_closed {
+    display: none;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  &__nav-wrap_opened {
+    display: block;
+    position :absolute;
+    z-index: 10;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    min-height: 484px;
+    
+    @media (min-width: $mob) {
+      position: static;
+      width: 100%;
+      min-height: 54px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 82px;
+  height: 40px;
+  font-size: 0;
+  
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    color: $bets-yellow;
+  }
+
+  &__symbol {
+    fill: currentColor;
+  }
+}

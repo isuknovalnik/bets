@@ -1,0 +1,11 @@
+.advert-narrow {
+  width: 273px;
+  height: 582px;
+  margin: 0 auto 20px;
+  padding: 0;
+  
+  @media (min-width: $mob) {
+    margin: 0;
+    margin-top: 60px;
+  }
+}

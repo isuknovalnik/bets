@@ -1,0 +1,77 @@
+.betting-school-card {
+  display: block;
+  width: 300px;
+  height: 310px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+  background-color: $card-back-dim;
+  
+  @media (min-width: $mob) {
+    width: 275px;
+    height: 310px;
+    margin: 0;
+  }
+  
+  &__pict {
+    width: 300px;
+    height: 180px;
+    
+    @media (min-width: $mob) {
+      width: 275px;
+      height: 180px;
+    }
+  }
+  
+  &__title {
+    width: 230px;
+    height: 72px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: $card-heading;
+    overflow: hidden;
+  }
+  
+  &__date {
+    width: 110px;
+    max-height: 24px;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: $card-comments-text;
+    overflow: hidden;
+  }
+  
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__comments {
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: $card-comments-text
+    
+  }
+  
+  &__symbol {
+    width: 19px;
+    height: 16px;
+    margin-right: 10px;
+    color: $card-heading;
+  }
+  
+}

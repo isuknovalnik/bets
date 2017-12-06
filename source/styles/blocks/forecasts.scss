@@ -1,0 +1,44 @@
+.forecasts {
+  display: block;
+  min-height: 890px;
+  margin: 0 auto;
+
+  @media (min-width: $mob) {
+    margin: 0;
+    width: 300px;
+    min-height: 1284px;
+  }
+
+  @media (min-width: $w900) {
+    width: 564px;
+    min-height: 1085px;
+  }
+
+  @media (min-width: $w1200) {
+    width: 853px;
+  }
+  
+  & .forecasts-table__row {
+    
+    &:nth-child(5),
+    &:nth-child(6) {
+      display: none;
+      
+    @media (min-width: $mob) {
+      display: flex;
+    }
+      
+    @media (min-width: $w1200) {
+      display: table-row;
+    }
+  }
+    
+    &:nth-child(n+7) {
+      display: none;
+
+      @media (min-width: $w1200) {
+        display: table-row;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.download-links {
+  display: block;
+  width: 135px;
+  height: 85px;
+  font-size: 0;
+  
+  &__link {
+    display: block;
+    width: 135px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background-size: 135px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &_google {
+      background-image: url('../images/googleplay.png')
+    }
+    
+    &_apple {
+      margin-top: 5px;
+      background-image: url('../images/appstore.svg')
+    }
+  }
+}

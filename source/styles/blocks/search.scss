@@ -1,0 +1,49 @@
+.search {
+  position: absolute;
+  z-index: 20;
+  display: none;
+  left: 20px;
+  top: 500px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 100;
+  color: $search-color;
+  text-decoration: none;
+  
+  @media (min-width: $mob) {
+    position: static;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+  }
+  
+  &:hover {
+    color: $bets-yellow;
+  }
+  
+  &__symbol {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    margin-bottom: -3px;
+    fill: currentColor;
+    
+    @media (min-width: $mob) {
+      margin: 17px;;
+    }
+  }
+  
+  &_mob-opened {
+    display: block;
+  }
+  
+  &_mob-closed {
+    display: none;
+    
+    @media (min-width: $mob) {
+      display: block;
+    }
+  }
+}
+

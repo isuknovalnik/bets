@@ -1,0 +1,136 @@
+.heading-wrap {
+  display: block;
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0;
+  
+  @media (min-width: $mob) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 562px;
+    height: 102px;
+    margin-bottom: 24px;
+    max-width: $desktop;
+  }
+  
+  @media (min-width: $w900) {
+    width: 852px;
+  }
+    
+  @media (min-width: $w1200) {
+    width: 100%;
+  }
+
+  & .viewmore-btn {
+    @media (min-width: $mob) {
+      margin-top: 60px;
+    }
+  }
+  
+  & .section-heading {
+    padding-top: 60px;
+    padding-bottom: 8px;
+    
+    @media (min-width: $mob) {
+      padding: 0;
+      margin-top: 56px;
+    }
+  }
+  
+  &_narrow {
+    @media (min-width: $mob) {
+      display: block;
+      width: 300px;
+      height: 150px;
+      margin: 0 auto;
+      
+      @media (min-width: $w900) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 564px;
+        height: 102px;
+        margin-bottom: 24px;
+      }
+    }
+    
+    @media (min-width: $w1200) {
+      width: 853px;
+    }
+    
+    & .section-heading {
+      @media (min-width: $mob) {
+        margin-top: 0;
+        padding-top: 60px;
+      }
+      
+      @media (min-width: $w900) {
+        padding: 0;
+        margin-top: 56px;
+      }
+    }
+    
+    & .viewmore-btn {
+      @media (min-width: $mob) {
+        margin-top: 0;
+      }
+      
+      @media (min-width: $w900) {
+        margin-top: 60px;
+      }
+    }
+  }
+  
+  &_video {
+    @media (min-width: $mob) {
+      width: 100%;
+      max-width: 746px;
+    }
+  }
+  
+  &_bonus {
+    @media (min-width: $mob) {
+      display: block;
+      width: 275px;
+      height: 150px;
+      margin: 0 auto;
+    }
+    
+    @media (min-width: $w900) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 564px;
+      height: 102px;
+      margin-bottom: 24px;
+    }
+    
+    @media (min-width: $w1200) {
+      width: 853px;
+    }
+    
+    & .section-heading {
+      @media (min-width: $mob) {
+        margin-top: 0;
+        padding-top: 60px;
+      }
+      
+      @media (min-width: $w900) {
+        padding: 0;
+        margin-top: 56px;
+      }
+    }
+    
+    & .viewmore-btn {
+      @media (min-width: $mob) {
+        margin-top: 0;
+      }
+      
+      @media (min-width: $w900) {
+        margin-top: 60px;
+      }
+    }
+  }
+}

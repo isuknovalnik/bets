@@ -1,0 +1,35 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  font-size: 0;
+  color: $header-color;
+  
+  @media (min-width: $mob) {
+    width: 94px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $login-back;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    outline: none;
+  }
+  
+  &:hover {
+    color: $hover-color;
+    background-color: $bets-yellow;
+  }
+  
+  &__symbol {
+    fill: currentColor;
+    
+    @media (min-width: $mob) {
+      display: none;
+    }
+  }
+}

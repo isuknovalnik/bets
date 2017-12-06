@@ -1,0 +1,71 @@
+.betting-school {
+  display: block;
+  min-height: 1724px;
+  
+  @media (min-width: $mob) {
+    max-width: $desktop;
+    min-height: 1170px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: $w900) {
+    min-height: 850px;
+  }
+  
+  &__articles-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320px;
+    margin: 0 auto;
+    
+    @media (min-width: $mob) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-content: space-between;
+      flex-wrap: wrap;
+      width: 562px;
+      height: 954px;
+    }
+    
+    @media (min-width: $w900) {
+      width: 852px;
+      height: 632px;
+    }
+    
+    @media (min-width: $w1200) {
+      width: 100%;
+      max-width: $desktop;
+    }
+  }
+  
+  &__articles-wrap .betting-school-card {
+    &:nth-of-type(3) {
+      @media (min-width: $mob) {
+        order: 4;
+      }
+      
+      @media (min-width: $w900) {
+        order: 0;
+      }
+    }
+    
+    &:nth-of-type(4) {
+      order: 5;
+      
+      @media (min-width: $w1200) {
+        order: 0;
+      }
+    }
+    
+    &:nth-of-type(n+5) {
+      display: none;
+
+      @media (min-width: $w1200) {
+        display: block;
+      }
+    }
+  }
+}
