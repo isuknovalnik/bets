@@ -53,21 +53,17 @@
           <div class="events-filter">
             <form action="#" method="get" class="events-filter__form">
               <div class="events-filter__title">Матчи:</div>
-              <div class="events-filter__select-wrap">Футбол
-                <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
-                  <option value="soccer" class="events-filter__option" selected>Футбол</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
-              <div class="events-filter__select-wrap">Все лиги
-                <select name="league" id="league" class="events-filter__select">
-                  <option value="all" class="events-filter__option" selected>Все лиги</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
+              <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
+                <option value="soccer" class="events-filter__option" selected>Футбол</option>
+              </select>
+              <select name="league" id="league" class="events-filter__select">
+                <option value="all" class="events-filter__option" selected>Все лиги</option>
+              </select>
             </form>
             <div class="events-filter__types">
-              <div class="events-filter__type events-filter__type_selected">Все</div>
-              <div class="events-filter__type">Будущие</div>
-              <div class="events-filter__type">Завершённые</div>
+              <a class="events-filter__type events-filter__type_selected" href="#">Все</a>
+              <a class="events-filter__type" href="#">Будущие</a>
+              <a class="events-filter__type" href="#">Завершённые</a>
             </div>
           </div>
           <table class="forecasts-table">
