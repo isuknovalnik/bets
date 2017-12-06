@@ -31,7 +31,6 @@
     width: 700px;
     min-height: 40px;
   }
-
   
   &__item {
     display: block;
@@ -46,19 +45,26 @@
     @media (min-width: $desktop) {
       margin: 0;
     }
-    
   }
 
+  &__item:hover &__link {
+    color: $bets-yellow;
+  }
+
+  &__item_active &__link {
+    color: $bets-yellow;
+  }
+  
+  &__item_active:hover &__link{
+    cursor: default;
+  }
+    
   &__link {
     font-size: 12px;
     font-weight: 500;
     color: $header-color;
     text-transform: uppercase;
     text-decoration: none;
-    
-    &:hover {
-      color: $bets-yellow;
-    }
   }
   
   &_mob-opened {

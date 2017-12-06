@@ -71,6 +71,14 @@
     &:hover {
       color: $bets-yellow;
     }
+    
+    &_active {
+      color: $bets-yellow;
+    }
+    
+    &_active:hover {
+      cursor: default;
+    }
   }
   
   &__link {
@@ -90,6 +98,14 @@
     
     &:hover {
       color: $bets-yellow;
+    }
+    
+    &_active {
+      color: $bets-yellow;
+    }
+    
+    &_active:hover {
+      cursor: default;
     }
   }
 }

@@ -23,6 +23,7 @@
   }
   
   &__item {
+    position: relative;
     display: block;
     min-height: 30px;
     padding-top: 16px;
@@ -41,6 +42,54 @@
         margin-left: 37px;
       }
     }
+    
+    &_active:before {
+      position: absolute;
+      display: block;
+      content: '';
+      z-index: 1;
+      bottom: -3px;
+      left: -35px;
+      height: 3px;
+      width: calc(100% + 35px);
+      background-color: $bets-yellow;
+    }
+
+    &_active:nth-child(1):before {
+      left: -37px;
+      width: calc(100% + 37px);
+    }
+    
+    &_active:nth-child(4):before {
+      left: -32px;
+      width: calc(100% + 32px);
+    }
+    
+    &:hover:before {
+      position: absolute;
+      display: block;
+      content: '';
+      z-index: 1;
+      bottom: -3px;
+      left: -35px;
+      width: calc(100% + 35px);
+      height: 3px;
+      background-color: $bets-yellow;
+    }
+    
+    &:nth-child(1):hover:before {
+      left: -37px;
+      width: calc(100% + 37px);
+    }
+    
+    &:nth-child(4):hover:before {
+      left: -32px;
+      width: calc(100% + 32px);
+    }
+  }
+  
+  &__item_active:hover &__link{
+    cursor: default;
   }
 
   &__link {
