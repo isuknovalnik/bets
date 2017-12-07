@@ -38,10 +38,10 @@
     @media (min-width: $mob) {
       display: flex;
       justify-content: space-between;
-      margin-top: 30px;
+      margin-top: 20px;
       margin-left: 30px;
       margin-right: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
   }
   
@@ -50,6 +50,7 @@
     justify-content: space-between;
     
     @media (min-width: $mob) {
+      margin-top: 4px;
       min-width: 290px;
     }
   }
