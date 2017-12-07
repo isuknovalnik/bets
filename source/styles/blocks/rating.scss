@@ -12,19 +12,11 @@
   
   @media (min-width: $mob) {
     min-height: 600px;
-    width: 700px;
+    width: 680px;
   }
   
   @media (min-width: $w900) {
     width: 765px;
-  }
-  
-  @media (min-width: $desktop) {
-    flex-shrink: 0;
-    flex-basis: 735px;
-  }
-    
-  @media (min-width: $desktop-w) {
     flex-basis: 765px;
   }
   
