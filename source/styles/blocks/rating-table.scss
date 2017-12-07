@@ -32,7 +32,7 @@
     &_2 {
       display: none;
       
-      @media (min-width: $mob) {
+      @media (min-width: $w900) {
         display: table-cell;
         width: 150px;
       }

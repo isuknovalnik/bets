@@ -12,6 +12,10 @@
   
   @media (min-width: $mob) {
     min-height: 600px;
+    width: 700px;
+  }
+  
+  @media (min-width: $w900) {
     width: 765px;
   }
   
