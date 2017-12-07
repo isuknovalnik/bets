@@ -12,6 +12,10 @@
     margin: 0;
   }
   
+  &:hover {
+    box-shadow: 0 25px 50px 3px $shadow-color;
+  }
+
   &_wide {
     height: 800px;
 

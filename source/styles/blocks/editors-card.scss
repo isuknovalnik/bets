@@ -1,14 +1,19 @@
 .editors-card {
   display: flex;
   width: 300px;
-  height: 108px;
-  margin: 0 auto;
+  height: 90px;
+  margin: 0 auto 18px;
   background-color: $card-back;
   
   @media (min-width: $mob) {
     width: 275px;
     height: 108px;
     margin: 0;
+    margin-bottom: 18px;
+  }
+  
+  &:hover {
+    box-shadow: 0 25px 50px 3px $shadow-color;
   }
   
   &__wrap {

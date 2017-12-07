@@ -12,6 +12,11 @@
     min-height: 850px;
   }
   
+  &:hover {
+    box-shadow: 0 25px 50px 3px $shadow-color;
+  }
+
+  
   &__articles-wrap {
     display: flex;
     flex-direction: column;
