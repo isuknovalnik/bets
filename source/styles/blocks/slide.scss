@@ -36,6 +36,30 @@
     }
   }
   
+  &_2:before {
+    background-image: url('../images/slide-back-mob.jpg');
+
+    @media (min-width: $mob) {
+      background-image: url('../images/slide-back.jpg');
+    }
+  }
+  
+  &_3:before {
+    background-image: url('../images/slide-back-mob.jpg');
+
+    @media (min-width: $mob) {
+      background-image: url('../images/slide-back.jpg');
+    }
+  }
+  
+  &_4:before {
+    background-image: url('../images/slide-back-mob.jpg');
+
+    @media (min-width: $mob) {
+      background-image: url('../images/slide-back.jpg');
+    }
+  }
+  
   &__title {
     position: absolute;
     z-index: 2;
@@ -108,11 +132,4 @@
   &__current {
     color: $bets-yellow;
   }
-  
-  &_2,
-  &_3,
-  &_4 {
-    display: none;
-  }
 }
-
