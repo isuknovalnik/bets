@@ -41,7 +41,7 @@
       justify-content: space-between;
       width: 595px;
       max-width: $desktop;
-      margin: 0 auto;
+      margin: 45px auto 0;
     }
     
     @media (min-width: $w900) {
@@ -72,7 +72,7 @@
       width: 595px;
       min-height: 1100px;
       max-width: $desktop;
-      margin: 0 auto;
+      margin: 45px auto 0;
     }
     
     @media (min-width: $w900) {
