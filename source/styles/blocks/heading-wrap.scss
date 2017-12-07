@@ -39,6 +39,17 @@
     }
   }
   
+  &_news {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 103px;
+    
+    & .viewmore-btn {
+      margin-top: 60px;
+    }
+  }
+  
   &_narrow {
     @media (min-width: $mob) {
       display: block;
