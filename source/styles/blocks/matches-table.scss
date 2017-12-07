@@ -24,7 +24,13 @@
       display: table-row;
       border-bottom: none;
     }
-   }
+    
+    &:hover {
+      box-shadow: 0 25px 50px 3px $shadow-color,
+        0 -3px 8px 0 $shadow-light;
+      border-color: $page-color;
+    }
+  }
   
   &__col {
     border-collapse: collapse;
@@ -61,6 +67,12 @@
         margin: 0;
         border-right: 1px solid $table-border;
       }
+    }
+  }
+  
+  &__row:hover &__col {
+    @media (min-width: $w1200) {
+      border-color: $page-color;
     }
   }
   
