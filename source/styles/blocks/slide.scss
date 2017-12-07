@@ -80,6 +80,20 @@
       font-size: 90px;
       line-height: 100px;
     }
+    
+    @media (min-width: $desktop-w) {
+      left: 60px;
+      width: 420px;
+      font-size: 70px;
+      line-height: 78px;
+    }
+    
+    @media (min-width: $w1450) {
+      left: 102px;
+      width: 580px;
+      font-size: 90px;
+      line-height: 100px;
+    }
   }
   
   &__btn {

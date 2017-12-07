@@ -7,7 +7,7 @@
     display: block;
     background-color: $rating-back;
     
-    @media (min-width: $w1550) {
+    @media (min-width: $desktop-w) {
       display: flex;
       margin: 0 auto;
       max-width: $hd;
