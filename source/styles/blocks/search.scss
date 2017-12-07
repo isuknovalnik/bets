@@ -2,13 +2,11 @@
   position: absolute;
   z-index: 20;
   display: none;
+  justify-content: space-between;
+  align-items: center;
   left: 20px;
   top: 500px;
   width: 150px;
-  font-size: 14px;
-  font-weight: 100;
-  color: $search-color;
-  text-decoration: none;
   
   @media (min-width: $mob) {
     position: static;
@@ -20,6 +18,41 @@
   
   &:hover {
     color: $bets-yellow;
+  }
+  
+  &__link {
+    cursor: default;
+    color: $search-color;
+    
+    @media (min-width: $mob) {
+      cursor: pointer;
+    }
+    
+    &:hover {
+      @media (min-width: $mob) {
+        color: $bets-yellow;
+      }
+    }
+  }
+  
+  &__input {
+    padding-left: 8px;
+    font-family: $gotham;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 100;
+    color: $search-color;
+    background-color: $menu-back;
+    border: none;
+    outline: none;
+    
+    &:focus {
+      outline: 1px solid $search-color;
+    }
+    
+    @media (min-width: $mob) {
+      display: none;
+    }
   }
   
   &__symbol {
@@ -35,14 +68,14 @@
   }
   
   &_mob-opened {
-    display: block;
+    display: flex;
   }
   
   &_mob-closed {
     display: none;
     
     @media (min-width: $mob) {
-      display: block;
+      display: flex;
     }
   }
 }
