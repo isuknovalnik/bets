@@ -24,7 +24,13 @@
 
     @media (min-width: $w1200) {
       display: table-row;
-      border-bottom: none;
+      border: 1px solid $table-border;
+    }
+    
+    &:first-child {
+      @media (min-width: $w1200) {
+        border-top: none;
+      }
     }
     
     &:hover {
@@ -36,12 +42,8 @@
   }
   
   &__col {
-    border-collapse: collapse;
-    
     @media (min-width: $w1200) {
       height: 66px;
-      border-bottom: 1px solid $table-border;
-      border-top: 1px solid $table-border;
     }
     
     &_1 {
@@ -56,7 +58,6 @@
         width: 104px;
         margin-right: 0;
         margin-left: 0;
-        border-left: 1px solid $table-border;
       }
     }
     
@@ -83,25 +84,12 @@
       @media (min-width: $w1200) {
         margin-left: 0;
       }
-      
-    }
-    
-    &_6 {
-      @media (min-width: $w1200) {
-        border-right: 1px solid $table-border;
-      }
     }
   }
   
   &__row:hover &__col {
     @media (min-width: $w1200) {
       border-color: $page-color;
-    }
-  }
-  
-  &__row:first-child &__col {
-    @media (min-width: $w1200) {
-      border-top: none;
     }
   }
   

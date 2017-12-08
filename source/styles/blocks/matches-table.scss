@@ -22,9 +22,15 @@
     
     @media (min-width: $w1200) {
       display: table-row;
-      border-bottom: none;
+      border: 1px solid $table-border;
     }
     
+     &:first-child {
+      @media (min-width: $w1200) {
+        border-top: none;
+      }
+    }
+   
     &:hover {
       box-shadow: 0 25px 50px 3px $shadow-color,
         0 -3px 8px 0 $shadow-light;
@@ -33,12 +39,8 @@
   }
   
   &__col {
-    border-collapse: collapse;
-    
     @media (min-width: $w1200) {
       height: 66px;
-      border-bottom: 1px solid $table-border;
-      border-top: 1px solid $table-border;
     }
     
     &_1 {
@@ -48,7 +50,6 @@
       @media (min-width: $w1200) {
         width: 104px;
         margin: 0;
-        border-left: 1px solid $table-border;
       }
     }
     
@@ -65,7 +66,6 @@
       
       @media (min-width: $w1200) {
         margin: 0;
-        border-right: 1px solid $table-border;
       }
     }
   }
@@ -76,13 +76,7 @@
     }
   }
   
-  &__row:first-child &__col {
-    @media (min-width: $w1200) {
-      border-top: none;
-    }
-  }
-
-  .matches-full  &__row:first-child &__col {
+  .matches-full  &__row:first-child {
     @media (min-width: $w1200) {
       border-top: 1px solid $table-border;
     }
