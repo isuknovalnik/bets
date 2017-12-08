@@ -68,8 +68,12 @@
         </div>
         <section class="news">
           <div class="news__articles-wrap">
-            <article class="news-card news-card_wide">
-              <img src="images/news-1.jpg" width="562" height="400" class="news-card__pict" alt=""/>
+            <article class="news-card news-card_project">
+              <picture class="news-card__pict">
+                <source media="(max-width:700px)" srcset="images/news-1-project-mob.jpg">
+                <source media="(min-width:700px)" srcset="images/news-1.jpg">
+                <img src="images/news-1.jpg" class="news-card__pict" alt="">
+              </picture>
               <div class="news-card__label">Серия А</div>
               <h3 class="news-card__title">Чемпионат Италии. Анонс матча Интер — Сампдория</h3>
               <div class="news-card__date">3 дня назад</div>
