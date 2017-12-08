@@ -31,7 +31,8 @@ gulp.task("styles", function() {
 				"last 2 Chrome versions",
 				"last 2 Firefox versions",
 				"last 2 Opera versions",
-				"last 2 Edge versions"
+				"last 2 Edge versions",
+				"IE 11"
 			]}),
 			mqpacker({
 				sort: true

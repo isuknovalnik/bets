@@ -1,11 +1,56 @@
 .project {
+  position: relative;
   display: block;
   min-width: 320px;
   width: 100%;
-
-  &__forecasts-wrap {
+  
+  &__upper-wrap {
     display: block;
     width: 100%;
+    min-height: 3027px;
+    padding-top: 195px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url('../images/project-back.jpg');
+      
+    @media (min-width: $mob) {
+      min-height: 1215px;
+    }
+      
+    &:before {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      content: '';
+      top: 108px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 170px;
+      height: 170px;
+      background-repeat: no-repeat;
+      background-size: 172px 172px;
+      background-position: center;
+      background-image: url('../images/project-emblem.jpg');
+      border: 1px solid transparent;
+      border-radius: 50%;
+    }
+
+    & .viewmore-btn {
+      display: none;
+      
+      @media (min-width: $mob) {
+        display: block;
+        margin: 50px auto 0;
+      }
+    }
+    
+    & .news {
+      min-height: 812px;
+    }
+  }
+
+  &__forecasts-wrap {
+    display: none;
     
     @media (min-width: $mob) {
       display: flex;
@@ -25,17 +70,20 @@
   }
   
   &__video-wrap {
-    display: block;
-    width: 100%;
-    background-color: $video-back;
-    background-image: url('../images/video-bg.jpg');
-    background-repeat: repeat;
-    background-position: top left;
+    display: none;
+    
+    @media (min-width: $mob) {
+      display: block;
+      width: 100%;
+      background-color: $video-back;
+      background-image: url('../images/video-bg.jpg');
+      background-repeat: repeat;
+      background-position: top left;
+    }
   }
 
   &__matches-wrap {
-    display: block;
-    width: 100%;
+    display: none;
     
     @media (min-width: $mob) {
       display: flex;
