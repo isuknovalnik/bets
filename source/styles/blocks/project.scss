@@ -14,7 +14,7 @@
     background-image: url('../images/project-back.jpg');
       
     @media (min-width: $mob) {
-      min-height: 1215px;
+      min-height: 1225px;
     }
       
     &:before {
@@ -91,7 +91,7 @@
       width: 595px;
       min-height: 1100px;
       max-width: $desktop;
-      margin: 0 auto;
+      margin: 20px auto 0;
     }
     
     @media (min-width: $w900) {
