@@ -2,7 +2,9 @@
   "name": "bets",
   "version": "1.0.0",
   "author": "",
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^4.0.7"
+  },
   "main": "Gulpfile.js",
   "scripts": {
     "build": "gulp build",

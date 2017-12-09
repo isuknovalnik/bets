@@ -21,20 +21,51 @@
     background-size: 180px 140px, 180px 140px, 72px 56px, 72px 56px, 72px 56px;
   }
   
+  @media (min-width: $desktop-w) {
+    background: url('../images/cross.svg') -23px 523px no-repeat,
+      url('../images/cross.svg') -89px 390px no-repeat,
+      url('../images/cross.svg') 317px 167px no-repeat,
+      url('../images/cross.svg') calc(100% - 13px) 239px no-repeat,
+      url('../images/cross.svg') calc(100% - 91px) 101px no-repeat;
+    background-size: 180px 140px, 180px 140px, 72px 56px, 72px 56px, 72px 56px;
+  }
+  
+  @media (min-width: $w1550) {
+    background: url('../images/cross.svg') 77px 523px no-repeat,
+      url('../images/cross.svg') 11px 390px no-repeat,
+      url('../images/cross.svg') 317px 167px no-repeat,
+      url('../images/cross.svg') calc(100% - 13px) 239px no-repeat,
+      url('../images/cross.svg') calc(100% - 91px) 101px no-repeat;
+    background-size: 180px 140px, 180px 140px, 72px 56px, 72px 56px, 72px 56px;
+  }
+  
   &:before {
     display: none;
     
-    @media (min-width: $w1550) {
+    @media (min-width: $desktop-w) {
       position: absolute;
       display: block;
       content: '';
       bottom: 0;
+      left: 136px;
+      width: 280px;
+      height: 464px;
+      background-image: url(../images/video-img.png);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: contain;
+    }
+    
+    @media (min-width: $w1450) {
+      left: 160px;
+      width: 350px;
+      height: 580px;
+    }
+    
+    @media (min-width: $w1550) {
       left: 166px;
       width: 421px;
       height: 696px;
-      background-image: url(../images/video-img.png);
-      background-repeat: no-repeat;
-      background-position: center;
     }
     
     @media (min-width: $w1700) {
@@ -55,6 +86,14 @@
     @media (min-width: $w900) {
       width: 748px;
       min-height: 651px;
+    }
+    
+    @media (min-width: $desktop-w) {
+      margin-left: 460px;
+    }
+    
+    @media (min-width: $w1450) {
+      margin-left: 570px;
     }
     
     @media (min-width: $w1550) {
@@ -117,16 +156,25 @@
   &__advice {
     display: none;
     
-    @media (min-width: $w1550) {
+    @media (min-width: $desktop-w) {
       position: absolute;
       display: block;
-      bottom: 36px;
-      left: 317px;
+      bottom: 24px;
+      left: 197px;
       width: 280px;
       font-size: 20px;
       line-height: 24px;
       font-weight: 500;
       color: $video-heading;
+    }
+    
+    @media (min-width: $w1450) {
+      bottom: 36px;
+      left: 267px;
+    }
+    
+    @media (min-width: $w1550) {
+      left: 317px;
       
       @media (min-width: $w1700) {
         left: 447px;

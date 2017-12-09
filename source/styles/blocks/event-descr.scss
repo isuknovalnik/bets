@@ -1,0 +1,33 @@
+.event-descr {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  min-height: 48px;
+  
+  &:last-child {
+    width: 222px;
+    margin-top: 10px;
+    
+    @media (min-width: $mob) {
+      margin-top: 0;
+    }
+  }
+  
+  &__title {
+    color: $event-title;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  &__value {
+    color: $project-header-color;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  &__symbol {
+    margin-right: 12px;
+    fill: $bets-yellow;
+  }
+}

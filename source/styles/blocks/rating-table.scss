@@ -17,7 +17,7 @@
   }
 
   &__col {
-    height: 62px;
+    height: 59px;
     border-collapse: collapse;
     border-bottom: 1px solid $rating-table-border;
     
@@ -32,7 +32,7 @@
     &_2 {
       display: none;
       
-      @media (min-width: $mob) {
+      @media (min-width: $w900) {
         display: table-cell;
         width: 150px;
       }

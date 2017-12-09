@@ -39,21 +39,32 @@
     }
   }
   
+  &_news {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 103px;
+    
+    & .viewmore-btn {
+      margin-top: 60px;
+    }
+  }
+  
   &_narrow {
     @media (min-width: $mob) {
       display: block;
       width: 300px;
       height: 150px;
       margin: 0 auto;
-      
-      @media (min-width: $w900) {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 564px;
-        height: 102px;
-        margin-bottom: 24px;
-      }
+    }
+    
+    @media (min-width: $w900) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 564px;
+      height: 102px;
+      margin-bottom: 14px;
     }
     
     @media (min-width: $w1200) {

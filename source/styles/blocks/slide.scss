@@ -36,6 +36,30 @@
     }
   }
   
+  &_2:before {
+    background-image: url('../images/slide-back-mob.jpg');
+
+    @media (min-width: $mob) {
+      background-image: url('../images/slide-back.jpg');
+    }
+  }
+  
+  &_3:before {
+    background-image: url('../images/slide-back-mob.jpg');
+
+    @media (min-width: $mob) {
+      background-image: url('../images/slide-back.jpg');
+    }
+  }
+  
+  &_4:before {
+    background-image: url('../images/slide-back-mob.jpg');
+
+    @media (min-width: $mob) {
+      background-image: url('../images/slide-back.jpg');
+    }
+  }
+  
   &__title {
     position: absolute;
     z-index: 2;
@@ -51,6 +75,20 @@
     
     @media (min-width: $mob) {
       top: 153px;
+      left: 102px;
+      width: 580px;
+      font-size: 90px;
+      line-height: 100px;
+    }
+    
+    @media (min-width: $desktop-w) {
+      left: 60px;
+      width: 420px;
+      font-size: 70px;
+      line-height: 78px;
+    }
+    
+    @media (min-width: $w1450) {
       left: 102px;
       width: 580px;
       font-size: 90px;
@@ -108,11 +146,4 @@
   &__current {
     color: $bets-yellow;
   }
-  
-  &_2,
-  &_3,
-  &_4 {
-    display: none;
-  }
 }
-

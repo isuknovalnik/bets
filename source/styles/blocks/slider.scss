@@ -20,28 +20,7 @@
     margin: 0;
   }
   
-  &__main-wrap {
-  }
-  
-  &__controls {
-    position: absolute;
-    z-index: 3;
-    top: 500px;
-    left: 16px;
-    top: 266px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 180px;
-    height: 26px;
-    
-    @media (min-width: $mob) {
-      left: 109px;
-      top: 548px;
-    }
-  }
-  
-  &:before {
+  &:after {
     position: absolute;
     display: block;
     content: '';
@@ -55,7 +34,7 @@
       url('../images/star.svg') -35px 140px no-repeat;
     background-size: 45px 43px, 110px 106px, 177px 170px;
     opacity: 0.54;
-
+  
     @media (min-width: $mob) {
       height: 564px;
       width: 291px;
@@ -65,67 +44,67 @@
       background-size: 91px 87px, 219px 209px, 354px 340px;
     }
   }
+}
+
+.swiper-container {
+  width: 100%;
+  min-width: 320px;
+  height: 297px;
   
-  &__btn {
-    display: none;
+  @media (min-width: $mob) {
+    min-height: 600px;
+    max-width: 1155px;
   }
   
-  &__arrow {
+  .swiper-pagination {
+    top: 243px;
+    width: 216px!important;
+    
+    @media (min-width: $mob) {
+      top: 525px;
+      width: 400px!important;
+    }
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: $page-color;
+    margin-left: 8px!important;
+    margin-right: 8px!important;
+
+    &-active {
+      background-color: $bets-yellow;
+    }
+  }
+  
+ .swiper-button-prev {
+    z-index: 100;
+    left: 16px;
+    top: 266px;
     width: 26px;
     height: 18px;
-    margin: 0;
-    font-size: 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-position: left top;
+    background-size: 26px 18px;
+    background-image: url('../images/arrow-left.png');
     
-    &_prev {
-      background-image: url('../images/left-arrow.png');
-    }
-    
-    &_next {
-      background-image: url('../images/right-arrow.png');
+    @media (min-width: $mob) {
+      left: 109px;
+      top: 548px;
     }
   }
-  
-  &__label {
-    width: 6px;
-    height: 6px;
-    margin: 0;
-    padding: 0;
-    background: white;
-    opacity: 0.5;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    
-  }
-  
-  &__btn_1:checked ~ &__controls &__label_1,
-  &__btn_2:checked ~ &__controls &__label_2,
-  &__btn_3:checked ~ &__controls &__label_3,
-  &__btn_4:checked ~ &__controls &__label_4 {
-    background-color: $bets-yellow;
-    opacity: 1;
-    cursor: default;
-  }
-  
-  &__wrap {
-    
-  }
-  
-  &__slides-bar {
-    
-  }
-/*
-  &__slides-bar {
-    display: flex;
-    width: 400%;
-  }
-*/
-  
+   .swiper-button-next {
+      left: 170px;
+      top: 266px;
+      width: 26px;
+      height: 18px;
+      background-size: 26px 18px;
+      background-image: url('../images/arrow-right.png');
 
+      @media (min-width: $mob) {
+        left: 263px;
+        top: 548px;
+      }
+  }
 }
+
+
 
 

@@ -31,7 +31,8 @@ gulp.task("styles", function() {
 				"last 2 Chrome versions",
 				"last 2 Firefox versions",
 				"last 2 Opera versions",
-				"last 2 Edge versions"
+				"last 2 Edge versions",
+				"IE 11"
 			]}),
 			mqpacker({
 				sort: true
@@ -45,11 +46,11 @@ gulp.task("styles", function() {
 });
 
 gulp.task("jscript", function () {
-	gulp.src("source/**/*.js")
+	gulp.src("source/scripts/*.js")
 		.pipe(plumber())
 		.pipe(jsmin())
 		.pipe(rename({suffix: '.min'}))
-		.pipe(gulp.dest("build"))
+		.pipe(gulp.dest("build/scripts/"))
 		.pipe(server.reload({stream: true}));
 });
 
@@ -101,7 +102,8 @@ gulp.task("copy", function() {
 		"source/fonts/**/*.{woff,woff2}",
 		"source/images/**/*",
 		"source/data/**/*",
-		"source/*.html"
+		"source/*.html",
+		"source/lib/**/*"
 	], {
 		base: "source"
 	})

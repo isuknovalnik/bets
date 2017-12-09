@@ -1,5 +1,7 @@
 .bookies-nav {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
   background-color: $menu-back;
@@ -7,7 +9,7 @@
   list-style: none;
   
   @media (min-width: $mob) {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -23,6 +25,7 @@
   }
   
   &__item {
+    position: relative;
     display: block;
     min-height: 30px;
     padding-top: 16px;
@@ -41,6 +44,54 @@
         margin-left: 37px;
       }
     }
+    
+    &_active:before {
+      position: absolute;
+      display: block;
+      content: '';
+      z-index: 1;
+      bottom: -3px;
+      left: -35px;
+      height: 3px;
+      width: calc(100% + 35px);
+      background-color: $bets-yellow;
+    }
+
+    &_active:nth-child(1):before {
+      left: -37px;
+      width: calc(100% + 37px);
+    }
+    
+    &_active:nth-child(4):before {
+      left: -32px;
+      width: calc(100% + 32px);
+    }
+    
+    &:hover:before {
+      position: absolute;
+      display: block;
+      content: '';
+      z-index: 1;
+      bottom: -3px;
+      left: -35px;
+      width: calc(100% + 35px);
+      height: 3px;
+      background-color: $bets-yellow;
+    }
+    
+    &:nth-child(1):hover:before {
+      left: -37px;
+      width: calc(100% + 37px);
+    }
+    
+    &:nth-child(4):hover:before {
+      left: -32px;
+      width: calc(100% + 32px);
+    }
+  }
+  
+  &__item_active:hover &__link{
+    cursor: default;
   }
 
   &__link {

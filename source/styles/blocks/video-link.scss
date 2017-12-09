@@ -13,6 +13,10 @@
   text-decoration: none;
   color: $video-heading;
   
+  &:hover {
+    color: $bets-yellow;
+  }
+  
   @media (min-width: $mob) {
     width: 170px;
     min-height: 70px;

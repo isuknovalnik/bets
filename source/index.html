@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="styles/style.min.css" rel="stylesheet">
+    <link href="lib/swiper.min.css" rel="stylesheet">
   </head>
   <body class="page">
     <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
@@ -29,7 +30,10 @@
           <li class="main-nav__item"><a href="#" class="main-nav__link">ШКОЛА СТАВОК</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">ВОПРОС-ОТВЕТ</a></li>
         </ul>
-        <a class="search search_mob-closed" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg>Поиск по сайту</a>
+        <div class="search search_mob-closed">
+          <a class="search__link" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg></a>
+          <input type="text" name="search" value="" id="search" placeholder="Поиск по сайту" class="search__input">
+        </div>
         <a class="login" href="#"><svg width="20" height="25" class="login__symbol"><use xlink:href="#user"></use></svg>Войти</a>
       </div>
       <div class="header__nav-wrap header__nav-wrap_closed">
@@ -45,45 +49,35 @@
     <div class="index">
       <div class="index__banner-wrap">
         <div class="index__banner">
-          <div class="slider">
-            <div class="slider__main-wrap">
-              <input class="slider__btn slider__btn_1" type="radio" id="slider-btn-1" name="slider-toggle" checked>
-              <input class="slider__btn slider__btn_2" type="radio" id="slider-btn-2" name="slider-toggle">
-              <input class="slider__btn slider__btn_3" type="radio" id="slider-btn-3" name="slider-toggle">
-              <input class="slider__btn slider__btn_4" type="radio" id="slider-btn-4" name="slider-toggle">
-              <div class="slider__controls">
-                <button type="button" class="slider__arrow slider__arrow_prev">пред.</button>
-                <label class="slider__label slider__label_1 slider__label" for="slider-btn-1"></label>
-                <label class="slider__label slider__label_2" for="slider-btn-2"></label>
-                <label class="slider__label slider__label_3" for="slider-btn-3"></label>
-                <label class="slider__label slider__label_4" for="slider-btn-4"></label>
-                <button type="button" class="slider__arrow slider__arrow_next">след.</button>
-              </div>
-              <div class="slider__wrap">
-                <div class="slider__slides-bar">
-                  <section class="slide slide_1">
-                    <h2 class="slide__title">Чемпионат мира 2018</h2>
-                    <a class="slide__btn" href="#">Читать</a>
-                    <div class="slide__counter"><span class="slide__current">1</span>/4</div>
-                  </section>
-                  <section class="slide slide_2">
-                    <h2 class="slide__title">Lorem ipsum Slide 2</h2>
-                    <a class="slide__btn" href="#">Читать</a>
-                    <div class="slide__counter"><span class="slide__current">1</span>/4</div>
-                  </section>
-                  <section class="slide slide_3">
-                    <h2 class="slide__title">Lorem ipsum Slide 3</h2>
-                    <a class="slide__btn" href="#">Читать</a>
-                    <div class="slide__counter"><span class="slide__current">1</span>/4</div>
-                  </section>
-                  <section class="slide slide_4">
-                    <h2 class="slide__title">Lorem ipsum Slide 4</h2>
-                    <a class="slide__btn" href="#">Читать</a>
-                    <div class="slide__counter"><span class="slide__current">1</span>/4</div>
-                  </section>
-                </div>
-              </div>
+          <div class="slider swiper-container">
+            <div class="swiper-wrapper">
+              <section class="slide slide_1 swiper-slide">
+                <h2 class="slide__title">Чемпионат мира 2018</h2>
+                <a class="slide__btn" href="#">Читать</a>
+                <div class="slide__counter"><span class="slide__current">1</span>/4</div>
+              </section>
+              <section class="slide slide_2 swiper-slide">
+                <h2 class="slide__title">Lorem ipsum</h2>
+                <a class="slide__btn" href="#">Читать</a>
+                <div class="slide__counter"><span class="slide__current">2</span>/4</div>
+              </section>
+              <section class="slide slide_3 swiper-slide">
+                <h2 class="slide__title">Slide 3</h2>
+                <a class="slide__btn" href="#">Читать</a>
+                <div class="slide__counter"><span class="slide__current">3</span>/4</div>
+              </section>
+              <section class="slide slide_4 swiper-slide">
+                <h2 class="slide__title">Slide 4</h2>
+                <a class="slide__btn" href="#">Читать</a>
+                <div class="slide__counter"><span class="slide__current">4</span>/4</div>
+              </section>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
           </div>
           <div class="rating">
             <div class="rating__upper-wrap">
@@ -279,7 +273,7 @@
       </div>
       <div class="index__news">
         <section class="news">
-          <div class="heading-wrap">
+          <div class="heading-wrap heading-wrap_news">
             <h2 class="section-heading">Новости</h2>
             <a class="viewmore-btn" href="#">Смотреть все</a>
           </div>
@@ -437,26 +431,22 @@
         <section class="forecasts">
           <div class="heading-wrap heading-wrap_narrow">
             <h2 class="section-heading">прогнозы</h2>
-            <a class="viewmore-btn" href="#">Смотреть все</a>
+            <a class="viewmore-btn" href="forecasts.html">Смотреть все</a>
           </div>
           <div class="events-filter">
             <form action="#" method="get" class="events-filter__form">
               <div class="events-filter__title">Матчи:</div>
-              <div class="events-filter__select-wrap">Футбол
-                <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
-                  <option value="soccer" class="events-filter__option" selected>Футбол</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
-              <div class="events-filter__select-wrap">Все лиги
-                <select name="league" id="league" class="events-filter__select">
-                  <option value="all" class="events-filter__option" selected>Все лиги</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
+              <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
+                <option value="soccer" class="events-filter__option" selected>Футбол</option>
+              </select>
+              <select name="league" id="league" class="events-filter__select">
+                <option value="all" class="events-filter__option" selected>Все лиги</option>
+              </select>
             </form>
             <div class="events-filter__types">
-              <div class="events-filter__type events-filter__type_selected">Все</div>
-              <div class="events-filter__type">Будущие</div>
-              <div class="events-filter__type">Завершённые</div>
+              <a class="events-filter__type events-filter__type_selected" href="#">Все</a>
+              <a class="events-filter__type" href="#">Будущие</a>
+              <a class="events-filter__type" href="#">Завершённые</a>
             </div>
           </div>
           <table class="forecasts-table">
@@ -765,26 +755,22 @@
         <section class="matches">
           <div class="heading-wrap heading-wrap_narrow">
             <h2 class="section-heading">Матчи</h2>
-            <a class="viewmore-btn viewmore-btn_video" href="#">Смотреть все</a>
+            <a class="viewmore-btn viewmore-btn_light" href="matches.html">Смотреть все</a>
           </div>
           <div class="events-filter">
             <form action="#" method="get" class="events-filter__form">
               <div class="events-filter__title">Матчи:</div>
-              <div class="events-filter__select-wrap">Футбол
-                <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
-                  <option value="soccer" class="events-filter__option" selected>Футбол</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
-              <div class="events-filter__select-wrap">Все лиги
-                <select name="league" id="league" class="events-filter__select">
-                  <option value="all" class="events-filter__option" selected>Все лиги</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
+              <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
+                <option value="soccer" class="events-filter__option" selected>Футбол</option>
+              </select>
+              <select name="league" id="league" class="events-filter__select">
+                <option value="all" class="events-filter__option" selected>Все лиги</option>
+              </select>
             </form>
             <div class="events-filter__types">
-              <div class="events-filter__type events-filter__type_selected">Все</div>
-              <div class="events-filter__type">Будущие</div>
-              <div class="events-filter__type">Завершённые</div>
+              <a class="events-filter__type events-filter__type_selected" href="#">Все</a>
+              <a class="events-filter__type" href="#">Будущие</a>
+              <a class="events-filter__type" href="#">Завершённые</a>
             </div>
           </div>
           <table class="matches-table">
@@ -1155,7 +1141,7 @@
           <a href="#" class="footer-links__link">Букмекеры с бонусами</a>
         </div>
         <div class="footer-links">
-          <a href="#" class="footer-links__heading">Прогнозы на спорт</a>
+          <a href="forecasts.html" class="footer-links__heading">Прогнозы на спорт</a>
           <a href="#" class="footer-links__link">Прогнозы на футбол</a>
           <a href="#" class="footer-links__link">Прогнозы на хоккей</a>
           <a href="#" class="footer-links__link">Прогнозы на теннис</a>
@@ -1186,6 +1172,25 @@
         <div class="age-label">+18</div>
       </div>
     </footer>
+    <script src="lib/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          loop: true,
+          speed: 600,
+          /*
+          autoplay: {
+              delay: 5000,
+            }, */
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        })
+    </script>
     <script src="scripts/script.min.js"></script>
   </body>
 

@@ -25,11 +25,14 @@
         <ul class="main-nav main-nav_mob-closed">
           <li class="main-nav__item"><a href="#" class="main-nav__link">НОВОСТИ</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">РЕЙТИНГ БУКМЕКЕРОВ</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">ПРОГНОЗЫ НА СПОРТ</a></li>
+          <li class="main-nav__item main-nav__item_active"><a href="#" class="main-nav__link">ПРОГНОЗЫ НА СПОРТ</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">ШКОЛА СТАВОК</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">ВОПРОС-ОТВЕТ</a></li>
         </ul>
-        <a class="search search_mob-closed" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg>Поиск по сайту</a>
+        <div class="search search_mob-closed">
+          <a class="search__link" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg></a>
+          <input type="text" name="search" value="" id="search" placeholder="Поиск по сайту" class="search__input">
+        </div>
         <a class="login" href="#"><svg width="20" height="25" class="login__symbol"><use xlink:href="#user"></use></svg>Войти</a>
       </div>
       <div class="header__nav-wrap header__nav-wrap_closed">
@@ -53,21 +56,17 @@
           <div class="events-filter">
             <form action="#" method="get" class="events-filter__form">
               <div class="events-filter__title">Матчи:</div>
-              <div class="events-filter__select-wrap">Футбол
-                <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
-                  <option value="soccer" class="events-filter__option" selected>Футбол</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
-              <div class="events-filter__select-wrap">Все лиги
-                <select name="league" id="league" class="events-filter__select">
-                  <option value="all" class="events-filter__option" selected>Все лиги</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
+              <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
+                <option value="soccer" class="events-filter__option" selected>Футбол</option>
+              </select>
+              <select name="league" id="league" class="events-filter__select">
+                <option value="all" class="events-filter__option" selected>Все лиги</option>
+              </select>
             </form>
             <div class="events-filter__types">
-              <div class="events-filter__type events-filter__type_selected">Все</div>
-              <div class="events-filter__type">Будущие</div>
-              <div class="events-filter__type">Завершённые</div>
+              <a class="events-filter__type events-filter__type_selected" href="#">Все</a>
+              <a class="events-filter__type" href="#">Будущие</a>
+              <a class="events-filter__type" href="#">Завершённые</a>
             </div>
           </div>
           <table class="forecasts-table">
@@ -701,7 +700,7 @@
           <a href="#" class="footer-links__link">Букмекеры с бонусами</a>
         </div>
         <div class="footer-links">
-          <a href="#" class="footer-links__heading">Прогнозы на спорт</a>
+          <a href="#" class="footer-links__heading footer-links__heading_active">Прогнозы на спорт</a>
           <a href="#" class="footer-links__link">Прогнозы на футбол</a>
           <a href="#" class="footer-links__link">Прогнозы на хоккей</a>
           <a href="#" class="footer-links__link">Прогнозы на теннис</a>

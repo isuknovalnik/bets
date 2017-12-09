@@ -29,7 +29,10 @@
           <li class="main-nav__item"><a href="#" class="main-nav__link">ШКОЛА СТАВОК</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">ВОПРОС-ОТВЕТ</a></li>
         </ul>
-        <a class="search search_mob-closed" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg>Поиск по сайту</a>
+        <div class="search search_mob-closed">
+          <a class="search__link" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg></a>
+          <input type="text" name="search" value="" id="search" placeholder="Поиск по сайту" class="search__input">
+        </div>
         <a class="login" href="#"><svg width="20" height="25" class="login__symbol"><use xlink:href="#user"></use></svg>Войти</a>
       </div>
       <div class="header__nav-wrap header__nav-wrap_closed">
@@ -43,11 +46,34 @@
       </div>
     </header>
     <div class="project">
-      <div class="project__news">
+      <div class="project__upper-wrap">
+        <div class="project-header">
+          <h1 class="project-header__title">Чемпионат Мира по футболу 2018</h1>
+          <div class="project-header__wrap">
+            <div class="event-descr">
+               <svg width="24" height="24" class="event-descr__symbol"><use xlink:href="#calendar"></use></svg>
+               <div class="event-descr__wrap">
+                <div class="event-descr__title">Даты проведения</div>
+                <div class="event-descr__value">04.09.2016—14.11.2017</div>
+              </div>
+            </div>
+            <div class="event-descr">
+              <svg width="19" height="25" class="event-descr__symbol"><use xlink:href="#placeholder"></use></svg>
+               <div class="event-descr__wrap">
+                <div class="event-descr__title">Место проведения</div>
+                <div class="event-descr__value">Россия</div>
+              </div>
+            </div>
+          </div>
+        </div>
         <section class="news">
           <div class="news__articles-wrap">
-            <article class="news-card news-card_wide">
-              <img src="images/news-1.jpg" width="562" height="400" class="news-card__pict" alt=""/>
+            <article class="news-card news-card_project">
+              <picture class="news-card__pict">
+                <source media="(max-width:700px)" srcset="images/news-1-project-mob.jpg">
+                <source media="(min-width:700px)" srcset="images/news-1.jpg">
+                <img src="images/news-1.jpg" class="news-card__pict" alt="">
+              </picture>
               <div class="news-card__label">Серия А</div>
               <h3 class="news-card__title">Чемпионат Италии. Анонс матча Интер — Сампдория</h3>
               <div class="news-card__date">3 дня назад</div>
@@ -111,6 +137,7 @@
             </article>
           </div>
         </section>
+        <a class="viewmore-btn viewmore-btn_all-news" href="#">Смотреть все новости</a>
       </div>
       <div class="project__forecasts-wrap">
         <section class="forecasts">
@@ -121,21 +148,17 @@
           <div class="events-filter">
             <form action="#" method="get" class="events-filter__form">
               <div class="events-filter__title">Матчи:</div>
-              <div class="events-filter__select-wrap">Футбол
-                <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
-                  <option value="soccer" class="events-filter__option" selected>Футбол</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
-              <div class="events-filter__select-wrap">Все лиги
-                <select name="league" id="league" class="events-filter__select">
-                  <option value="all" class="events-filter__option" selected>Все лиги</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
+              <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
+                <option value="soccer" class="events-filter__option" selected>Футбол</option>
+              </select>
+              <select name="league" id="league" class="events-filter__select">
+                <option value="all" class="events-filter__option" selected>Все лиги</option>
+              </select>
             </form>
             <div class="events-filter__types">
-              <div class="events-filter__type events-filter__type_selected">Все</div>
-              <div class="events-filter__type">Будущие</div>
-              <div class="events-filter__type">Завершённые</div>
+              <a class="events-filter__type events-filter__type_selected" href="#">Все</a>
+              <a class="events-filter__type" href="#">Будущие</a>
+              <a class="events-filter__type" href="#">Завершённые</a>
             </div>
           </div>
           <table class="forecasts-table">
@@ -407,21 +430,17 @@
           <div class="events-filter">
             <form action="#" method="get" class="events-filter__form">
               <div class="events-filter__title">Матчи:</div>
-              <div class="events-filter__select-wrap">Футбол
-                <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
-                  <option value="soccer" class="events-filter__option" selected>Футбол</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
-              <div class="events-filter__select-wrap">Все лиги
-                <select name="league" id="league" class="events-filter__select">
-                  <option value="all" class="events-filter__option" selected>Все лиги</option>
-                </select><svg width="10" height="7" class="events-filter__symbol"><use xlink:href="#arrow-down"></use></svg>
-              </div>
+              <select name="kind-of-sport" id="kind-of-sport" class="events-filter__select">
+                <option value="soccer" class="events-filter__option" selected>Футбол</option>
+              </select>
+              <select name="league" id="league" class="events-filter__select">
+                <option value="all" class="events-filter__option" selected>Все лиги</option>
+              </select>
             </form>
             <div class="events-filter__types">
-              <div class="events-filter__type events-filter__type_selected">Все</div>
-              <div class="events-filter__type">Будущие</div>
-              <div class="events-filter__type">Завершённые</div>
+              <a class="events-filter__type events-filter__type_selected" href="#">Все</a>
+              <a class="events-filter__type" href="#">Будущие</a>
+              <a class="events-filter__type" href="#">Завершённые</a>
             </div>
           </div>
           <table class="matches-table">
