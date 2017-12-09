@@ -1,0 +1,45 @@
+.betting-school-page {
+  display: block;
+  min-width: 320px;
+  width: 100%;
+
+  &__wrap {
+    display: block;
+    width: 100%;
+    margin-top: 42px;
+    
+    @media (min-width: $mob) {
+      display: flex;
+      justify-content: space-between;
+      width: 640px;
+      max-width: $desktop;
+      min-height: 2000px;
+      margin: 42px auto 0;
+    }
+    
+    @media (min-width: $w1200) {
+      width: $desktop;
+    }
+  }
+  
+  &__sidebar {
+    display: none;
+    
+    @media (min-width: $mob) {
+      display: block;
+    }
+    
+    & .section-heading_small {
+      padding-top: 0;
+    }
+    
+    & .vk-vidget {
+      margin-top: 0;
+    }
+    
+    & .advert-narrow {
+      margin-top: 30px;
+    }
+  }
+
+}
