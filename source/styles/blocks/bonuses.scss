@@ -2,6 +2,7 @@
   display: block;
   min-height: 754px;
   margin: 0 auto;
+  width: 100%;
   
   @media (min-width: $mob) {
     max-width: $desktop;
@@ -30,6 +31,16 @@
     
     @media (min-width: $w1200) {
       width: 853px;
+      &--four {
+        width: 100%;
+        justify-content: left;
+        .bonus-card {
+          margin-right: 13px;
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
+        }
+      }
     }
   }
   
