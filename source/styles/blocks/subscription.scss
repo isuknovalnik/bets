@@ -1,12 +1,120 @@
 .subscription {
   display: block;
+  min-width: 320px;
   width: 100%;
   height: 157px;
   padding: 0;
   margin: 0;
-  background-color: $subscription-back;
+  background: url('../images/star.svg') -160px -63px no-repeat,
+    $subscription-back;
+  background-size: 259px 249px;
+  
+  @media (min-width: $mob) {
+    width: 380px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 20px;
+  }
 
+  @media (min-width: $w900) {
+    width: 545px;
+    background: url('../images/star.svg') -142px -63px no-repeat,
+      url('../images/star.svg') calc(100% - 84px) 95px no-repeat,
+      url('../images/star.svg') calc(100% - 71px) 62px no-repeat,
+      $subscription-back;
+    background-size: 259px 249px, 53px 51px, 32px 31px;
+  }
+  
   @media (min-width: $w1200) {
     width: 852px;
+    background: url('../images/star.svg') -42px -63px no-repeat,
+      url('../images/star.svg') calc(100% - 134px) 95px no-repeat,
+      url('../images/star.svg') calc(100% - 121px) 62px no-repeat,
+      url('../images/star.svg') calc(100% - 156px) 37px no-repeat,
+      $subscription-back;
+    background-size: 259px 249px, 53px 51px, 32px 31px, 22px 21px;
+  }
+  
+  &__heading {
+    width: 180px;
+    padding: 0;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $subscription-heading;
+    
+    @media (min-width: $w900) {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 11px;
+      padding-top: 44px;
+    }
+  }
+  
+  &__form {
+    position: relative;
+    width: 296px;
+    height: 42px;
+    margin: 0 auto;
+    
+    @media (min-width: $w1200) {
+      width: 594px;
+    }
+  }
+  
+  &__input {
+    width: 142px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    margin-left: 2px;
+    padding-left: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $subscription-text;
+    background-color: $subscription-input-back;
+    outline: none;
+    border: 1px solid transparent;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    @media (min-width: $w1200) {
+      width: 397px;
+      padding-left: 32px;
+      margin-left: 1px;
+    }
+
+  }
+  
+  &__btn {
+    position: absolute;
+    left: 167px;
+    top: 0;
+    width: 128px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $subscription-text;
+    background-color: $bets-yellow;
+    outline: none;
+    border: 1px solid transparent;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    
+    @media (min-width: $w1200) {
+      left: 431px;
+      width: 163px;
+    }
   }
 }

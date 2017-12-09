@@ -1,6 +1,6 @@
 .bonuses-full {
   display: block;
-  width: 300px;
+  width: 320px;
   margin: 0 auto;
 
   @media (min-width: $mob) {
@@ -23,11 +23,24 @@
   & .expand-btn {
     margin-top: 18px;
     margin-left: calc((100% - 300px)/2);
-    margin-bottom: 70px;
+    margin-bottom: 32px;
     
     @media (min-width: $mob) {
       margin-top: 20px;
       margin-left: 0;
+      margin-bottom: 40px;
+    }
+    
+    @media (min-width: $w1200) {
+      margin-bottom: 60px;
+    }
+  }
+  
+  & .subscription {
+    margin-bottom: 75px;
+    
+    @media (min-width: $w1200) {
+      margin-bottom: 90px;
     }
   }
 }
