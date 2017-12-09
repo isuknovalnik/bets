@@ -1,0 +1,33 @@
+.bonuses-full {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $mob) {
+    margin: 0;
+    width: 380px;
+  }
+  
+  @media (min-width: $w900) {
+    width: 545px;
+  }
+
+  @media (min-width: $w1200) {
+    width: 840px;
+  }
+  
+  &__articles-wrap {
+    
+  }
+  
+  & .expand-btn {
+    margin-top: 18px;
+    margin-left: calc((100% - 300px)/2);
+    margin-bottom: 70px;
+    
+    @media (min-width: $mob) {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+}
