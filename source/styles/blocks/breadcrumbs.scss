@@ -21,8 +21,6 @@
     position: relative;
     display: block;
     margin-right: 13px;
-    // - min-height: 30px;
-    // -padding-top: 16px;
     
     @media (min-width: $mob) {
     }
@@ -40,19 +38,12 @@
       font-size: 12px;
       line-height: 12px;
       font-weight: 700;
-      // -height: 3px;
-      // -width: calc(100% + 35px);
       color: $breadcrumbs-color;
     }
 
     &_active:after {
       display: none;
     }
-  /*    
-    &_active {
-      cursor: default;
-    }
-*/
   }
   
   &__item_active &__link {
