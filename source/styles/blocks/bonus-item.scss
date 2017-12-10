@@ -19,7 +19,11 @@
   
   &__card {
     width: 100%;
-    border: 1px solid $card-border;
+    border-bottom: 1px solid $card-border;
+    
+    @media (min-width: $mob) {
+      border: 1px solid $card-border;
+    }
   }
   
   &__pict {
@@ -170,6 +174,14 @@
     
     @media (min-width: $mob) {
       margin-bottom: 22px;
+    }
+  }
+  
+  & .breadcrumbs {
+    margin-bottom: 6px;
+    
+    @media (min-width: $mob) {
+      margin-bottom: 14px;
     }
   }
   
