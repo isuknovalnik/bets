@@ -1,0 +1,206 @@
+.forecast-item {
+  display: block;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $w900) {
+    margin: 0;
+    width: 545px;
+  }
+  
+  @media (min-width: $w1200) {
+    width: 846px;
+  }
+  
+  &__card {
+    width: 100%;
+    border-bottom: 1px solid $card-border;
+    
+    @media (min-width: $w900) {
+      border: 1px solid $card-border;
+    }
+  }
+  
+  &__pict-wrap {
+    position: relative;
+    background-color: $card-pict-back;
+    width: 320px;
+    margin: 0 auto;
+    
+    @media (min-width: $w900) {
+      width: 100%;
+      margin: 0;
+    }
+    
+  }
+  
+  &__pict {
+    display: block;
+    width: 320px;
+    height: 340px;
+    margin: 0 auto;
+    opacity: 0.7;
+    
+    @media (min-width: $w900) {
+      width: 100%;
+      max-width: 846px;
+      height: auto;
+    }
+    
+    @media (min-width: $w1200) {
+      width: 846px;
+      height: 477px;
+    }
+    
+  }
+  
+  &__logo {
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 107px;
+    height: 107px;
+  }
+  
+  &__tv-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    width: 148px;
+    
+    @media (min-width: $w900) {
+      top: 30px;
+      right: 30px;
+    }
+  }
+  
+  &__symbol {
+    fill: $breadcrumbs-color;
+    flex-shrink: 0;
+  }
+  
+  &__date {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: $card-heading-light;
+  }
+  
+  &__time {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: $bets-yellow;
+  }
+  
+  &__title {
+    position: absolute;
+    top: 151px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    max-height: 120px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: $card-heading-light;
+    overflow: hidden;
+    
+    @media (min-width: $w900) {
+      top: 120px;
+      width: 100%;
+      max-height: 126px;
+      font-size: 30px;
+      line-height: 42px;
+    }
+    
+    @media (min-width: $w1200) {
+      top: 334px;
+      width: 620px;
+      max-height: 84px;
+      margin: 0 auto;
+    }
+  }
+
+  &__player {
+    margin: 0;
+    padding: 0;
+    margin-top: 65px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: $table-text;
+  }
+  
+  &__card-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 20px;
+    width: 236px;
+    
+    @media (min-width: $w900) {
+      width: 280px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  &__ratio {
+    font-size: 16px;
+    font-weight: 400;
+    color: $table-text;
+  }
+  
+  &__ratio-descr {
+    margin-right: 12px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $table-text;
+  }
+  
+  &__details {
+    width: 300px;
+    padding: 0;
+    margin: 10px auto 15px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $card-heading;
+    
+    @media (min-width: $w900) {
+      width: 100%;
+      margin: 26px 0 44px;
+    }
+    
+    & p {
+      padding: 0;
+      margin: 0;
+      padding-top: 14px;
+    }
+    
+  }
+  
+  & .share-links {
+    margin-bottom: 70px;
+  }
+  
+  & .breadcrumbs {
+    margin-bottom: 6px;
+    
+    @media (min-width: $w900) {
+      margin-bottom: 14px;
+    }
+  }
+  
+}
