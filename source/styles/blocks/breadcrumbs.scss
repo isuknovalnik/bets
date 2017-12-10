@@ -12,21 +12,12 @@
     width: 100%;
     min-height: 24px;
     margin-left: 0;
-    
-    @media (min-width: $w1200) {
-    }
   }
   
   &__item {
     position: relative;
     display: block;
     margin-right: 13px;
-    
-    @media (min-width: $mob) {
-    }
-    
-    @media (min-width: $w1200) {
-    }
     
     &:after {
       position: absolute;
