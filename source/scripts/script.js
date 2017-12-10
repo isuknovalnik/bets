@@ -23,3 +23,22 @@ window.addEventListener("keydown", function(event) {
     searcher.classList.add("search_mob-closed");
   }
 });
+
+
+
+//переключение отзывов/обзоров
+$(".reviews__header-tab").click(function(e){
+  e.preventDefault();
+  var infId = $(this).attr("id");
+  $(".reviews__header-tab").removeClass("reviews__header-tab--active");
+  $(this).addClass("reviews__header-tab--active");
+  $(".reviews__tab").removeClass("reviews__tab--active");
+  $("."+infId).addClass("reviews__tab--active");
+});
+// аккордеон
+$(".reviews__tango-btn").click(function(e){
+  e.preventDefault();
+  var seeId = $(this).attr("id");
+  $(this).toggleClass("reviews__tango-btn--active");
+  $("."+seeId).toggleClass("reviews__tango-see--active");
+});
