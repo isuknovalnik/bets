@@ -165,4 +165,12 @@
     }
   }
   
+  & .share-links {
+    margin-bottom: 16px;
+    
+    @media (min-width: $mob) {
+      margin-bottom: 22px;
+    }
+  }
+  
 }
