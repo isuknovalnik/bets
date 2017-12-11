@@ -146,6 +146,10 @@
     text-decoration: none;
     color: $rating-flt-label;
     border-bottom: 1px solid $rating-flt-border;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 19px) 19px;
+    background-size: 10px 6px;
+    background-image: url('../images/arrow-light-up.svg');
     
     &:hover {
       color: $bets-yellow;
@@ -165,6 +169,10 @@
     color: $rating-flt-label;
     background-color: transparent;
     cursor: pointer;
+    
+    &:hover {
+      color: $bets-yellow;
+    }
   }
   
   select::-ms-expand {
