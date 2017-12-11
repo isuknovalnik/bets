@@ -21,6 +21,14 @@
     border-collapse: collapse;
     border-bottom: 1px solid $rating-table-border;
     
+    &_0 {
+      display: none;
+      
+      @media (min-width: $mob) {
+        display: table-cell;
+      }
+    }
+    
     &_1 {
       width: 100px;
       
@@ -60,10 +68,6 @@
     }
   }
 
-  &__row:nth-child(1) &__col {
-    border-top: 1px solid $rating-table-border;
-  }
-  
   &__pict {
     width: 73px;
     
@@ -72,6 +76,28 @@
       margin-right: 25px;
       width: 130px;
     }
+  }
+  
+  &__number {
+    font-size: 24px;
+    font-weight: 700px;
+    color: $rating-number;
+  }
+  
+  &__rating {
+    display: flex;
+    min-width: 64px;
+  }
+  
+  &__rating-symbol {
+    margin-right: 6px;
+    fill: $bets-yellow;
+  }
+  
+  &__rating-value {
+    font-size: 16px;
+    font-weight: 400px;
+    color: $rating-value;
   }
 }
 
