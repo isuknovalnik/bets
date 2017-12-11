@@ -132,6 +132,14 @@
   &__currencies {
     width: 100%;
     background-color: $rating-flt-currencies-back;
+    
+    &_closed {
+      display: none;
+    }
+    
+    &_opened {
+      display: block;
+    }
   }
   
   &__currencies-link {
@@ -149,10 +157,17 @@
     background-repeat: no-repeat;
     background-position: calc(100% - 19px) 19px;
     background-size: 10px 6px;
-    background-image: url('../images/arrow-light-up.svg');
     
     &:hover {
       color: $bets-yellow;
+    }
+    
+    &_closed {
+      background-image: url('../images/arrow-light-down.svg');
+    }
+    
+    &_opened {
+      background-image: url('../images/arrow-light-up.svg');
     }
   }
   
