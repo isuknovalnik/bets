@@ -1,0 +1,48 @@
+.rating-full {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $mob) {
+    margin: 0;
+    width: 300px;
+  }
+
+  @media (min-width: $w900) {
+    width: 564px;
+  }
+
+  @media (min-width: $w1200) {
+    width: 853px;
+  }
+  
+  &__intro {
+    display: none;
+    
+    @media (min-width: $mob) {
+      display: block;
+      width: 100%;
+      min-height: 200px;
+      margin: 0 auto 30px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $rating-full-color;
+    }
+    
+    &__intro p {
+      margin: 0;
+    }
+  }
+  
+  & .expand-btn {
+    margin-top: 18px;
+    margin-left: calc((100% - 300px)/2);
+    margin-bottom: 70px;
+    
+    @media (min-width: $mob) {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+
+}

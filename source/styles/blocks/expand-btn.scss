@@ -18,6 +18,14 @@
     background-color: $bets-yellow;
   }
   
+  &_dark {
+    color: $expand-btn-dark;
+    
+    &:hover {
+      color: $expand-btn-color;
+    }
+  }
+  
   &__symbol {
     width: 15px;
     height: 17px;

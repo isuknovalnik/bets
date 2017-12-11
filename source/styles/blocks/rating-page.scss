@@ -1,0 +1,41 @@
+.rating-page {
+  display: block;
+  min-width: 320px;
+  width: 100%;
+  color: $rating-full-color;
+  background-color: $rating-back;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 1436px;
+    
+    @media (min-width: $mob) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 595px;
+      max-width: $desktop;
+      min-height: 2198px;
+      margin: 42px auto 0;
+    }
+    
+    @media (min-width: $w900) {
+      width: 859px;
+    }
+
+    @media (min-width: $w1200) {
+      width: $desktop;
+      min-height: 2070px;
+    }
+  }
+  
+  &__sidebar {
+    order: -1;
+    
+    @media (min-width: $mob) {
+      order: 0;
+    }
+  }
+
+}
