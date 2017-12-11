@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fecc00">
+    <title>bets-rating</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="styles/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
+      <!-- inject:svg --><!-- endinject -->
+    </div>
+    <header class="header">
+      <div class="header__upper-wrap">
+        <a class="nav-open" href="#"><svg width="26" height="18" class="nav-open__symbol"><use xlink:href="#burger"></use></svg>Меню</a>
+        <div class="logo">
+          <div class="logo__top-text">ТОП<span class="logo__colored-text">50</span></div>
+          <div class="logo__bottom-text">букмекеров</div>
+          <svg width="54" height="52" class="logo__symbol"><use xlink:href="#star"></use></svg>
+        </div>
+        <ul class="main-nav main-nav_mob-closed">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">НОВОСТИ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">РЕЙТИНГ БУКМЕКЕРОВ</a></li>
+          <li class="main-nav__item main-nav__item_active"><a href="#" class="main-nav__link">ПРОГНОЗЫ НА СПОРТ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">ШКОЛА СТАВОК</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">ВОПРОС-ОТВЕТ</a></li>
+        </ul>
+        <div class="search search_mob-closed">
+          <a class="search__link" href="#"><svg width="16" height="16" class="search__symbol"><use xlink:href="#searcher"></use></svg></a>
+          <input type="text" name="search" value="" id="search" placeholder="Поиск по сайту" class="search__input">
+        </div>
+        <a class="login" href="#"><svg width="20" height="25" class="login__symbol"><use xlink:href="#user"></use></svg>Войти</a>
+      </div>
+      <div class="header__nav-wrap header__nav-wrap_closed">
+        <ul class="bookies-nav">
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link bookies-nav__link_active"><svg width="21" height="20" class="bookies-nav__symbol bookies-nav__symbol_growth"><use xlink:href="#growth"></use></svg>РЕЙТИНГ БУКМЕКЕРОВ</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="19" height="24" class="bookies-nav__symbol bookies-nav__symbol_like"><use xlink:href="#like"></use></svg>Народный рейтинг</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="19" height="20" class="bookies-nav__symbol bookies-nav__symbol_badge"><use xlink:href="#badge"></use></svg>Легальные букмекеры</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="12" height="21" class="bookies-nav__symbol bookies-nav__symbol_smartphone"><use xlink:href="#smartphone"></use></svg>Букмекеры на мобильном</a></li>
+          <li class="bookies-nav__item"><a href="#" class="bookies-nav__link"><svg width="19" height="21" class="bookies-nav__symbol bookies-nav__symbol_gift"><use xlink:href="#gift"></use></svg>Букмекеры с бонусами</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="rating-page">
+      <h1 class="page-header">Рейтинг букмекеров</h1>
+      <div class="rating-page__wrap">
+        <div class="rating-full">
+          <div class="rating-full__intro">
+            <p>Впервые использовать данную теорию в букмекерских конторах предложили в 2007 году игроки Арчонтакис и Осборн. Они утверждали, что эта тактика будет работать в ставках на ничьи с коэффициентами от 2.618 и более.</p>
+            <p>Стратегия не беспроигрышная, ведь для этого необходимо выполнение двух условий: бесконечный игровой банк и отсутствие лимитов в букмекерской конторе.</p>
+            <p>Авторы в качестве доказательства работоспособности теории приводят статистику Чемпионата Мира 2006 года и 32 самых популярных европейских футбольных лиг того сезона. Данный факт вызывает сомнения, но искать ему опровержение не будем, а докажем бесполезность теории гораздо проще</p>
+          </div>
+          <div class="rating-sorting">
+            <form action="#" method="get" class="rating-sorting__form">
+              <div class="rating-sorting__title">Сортировка:</div>
+              <select name="sorting-type" id="sorting-type" class="rating-sorting__select">
+                <option value="rating" class="rating-sorting__option" selected>по рейтингу</option>
+              </select>
+            </form>
+          </div>
+          <table class="rating-table-full">
+            <tr class="rating-table-full__row">
+              <td class="rating-table-full__col rating-table-full__col_1"><img src="images/bookmaker-1.png" width="130"  class="rating-table-full__pict" alt=""/></td>
+              <td class="rating-table-full__col rating-table-full__col_2">
+                <div class="rating-stars">
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol"><use xlink:href="#star"></use></svg>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_3">
+                <div class="rating-bonus">
+                  <div class="rating-bonus__title">Бонус</div>
+                  <div class="rating-bonus__value">2 000<span class="rating-bonus__unit"> Р</span></div>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_4">
+                <a class="rating-overview" href="#"><svg width="18" height="10" class="rating-overview__symbol"><use xlink:href="#eye"></use></svg>Обзор</a>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_5">
+                <a class="rating-link" href="#"><svg width="16" height="16" class="rating-link__symbol"><use xlink:href="#chain"></use></svg>На сайт</a>
+              </td>
+            </tr>
+            <tr class="rating-table-full__row">
+              <td class="rating-table-full__col rating-table-full__col_1"><img src="images/bookmaker-2.png" width="130"  class="rating-table-full__pict" alt=""/></td>
+              <td class="rating-table-full__col rating-table-full__col_2">
+                <div class="rating-stars">
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol"><use xlink:href="#star"></use></svg>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_3">
+                <div class="rating-bonus">
+                  <div class="rating-bonus__title">Бонус</div>
+                  <div class="rating-bonus__value">2 000<span class="rating-bonus__unit"> Р</span></div>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_4">
+                <a class="rating-overview" href="#"><svg width="18" height="10" class="rating-overview__symbol"><use xlink:href="#eye"></use></svg>Обзор</a>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_5">
+                <a class="rating-link" href="#"><svg width="16" height="16" class="rating-link__symbol"><use xlink:href="#chain"></use></svg>На сайт</a>
+              </td>
+            </tr>
+            <tr class="rating-table-full__row">
+              <td class="rating-table-full__col rating-table-full__col_1"><img src="images/bookmaker-3.png" width="130"  class="rating-table-full__pict" alt=""/></td>
+              <td class="rating-table-full__col rating-table-full__col_2">
+                <div class="rating-stars">
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol"><use xlink:href="#star"></use></svg>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_3">
+                <div class="rating-bonus">
+                  <div class="rating-bonus__title">Бонус</div>
+                  <div class="rating-bonus__value">2 000<span class="rating-bonus__unit"> Р</span></div>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_4">
+                <a class="rating-overview" href="#"><svg width="18" height="10" class="rating-overview__symbol"><use xlink:href="#eye"></use></svg>Обзор</a>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_5">
+                <a class="rating-link" href="#"><svg width="16" height="16" class="rating-link__symbol"><use xlink:href="#chain"></use></svg>На сайт</a>
+              </td>
+            </tr>
+            <tr class="rating-table-full__row">
+              <td class="rating-table-full__col rating-table-full__col_1"><img src="images/bookmaker-4.png" width="130"  class="rating-table-full__pict" alt=""/></td>
+              <td class="rating-table-full__col rating-table-full__col_2">
+                <div class="rating-stars">
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol"><use xlink:href="#star"></use></svg>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_3">
+                <div class="rating-bonus">
+                  <div class="rating-bonus__title">Бонус</div>
+                  <div class="rating-bonus__value">2 000<span class="rating-bonus__unit"> Р</span></div>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_4">
+                <a class="rating-overview" href="#"><svg width="18" height="10" class="rating-overview__symbol"><use xlink:href="#eye"></use></svg>Обзор</a>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_5">
+                <a class="rating-link" href="#"><svg width="16" height="16" class="rating-link__symbol"><use xlink:href="#chain"></use></svg>На сайт</a>
+              </td>
+            </tr>
+            <tr class="rating-table-full__row">
+              <td class="rating-table-full__col rating-table-full__col_1"><img src="images/bookmaker-5.png" width="130"  class="rating-table-full__pict" alt=""/></td>
+              <td class="rating-table-full__col rating-table-full__col_2">
+                <div class="rating-stars">
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol"><use xlink:href="#star"></use></svg>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_3">
+                <div class="rating-bonus">
+                  <div class="rating-bonus__title">Бонус</div>
+                  <div class="rating-bonus__value">2 000<span class="rating-bonus__unit"> Р</span></div>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_4">
+                <a class="rating-overview" href="#"><svg width="18" height="10" class="rating-overview__symbol"><use xlink:href="#eye"></use></svg>Обзор</a>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_5">
+                <a class="rating-link" href="#"><svg width="16" height="16" class="rating-link__symbol"><use xlink:href="#chain"></use></svg>На сайт</a>
+              </td>
+            </tr>
+            <tr class="rating-table-full__row">
+              <td class="rating-table-full__col rating-table-full__col_1"><img src="images/bookmaker-6.png" width="130"  class="rating-table-full__pict" alt=""/></td>
+              <td class="rating-table-full__col rating-table-full__col_2">
+                <div class="rating-stars">
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol"><use xlink:href="#star"></use></svg>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_3">
+                <div class="rating-bonus">
+                  <div class="rating-bonus__title">Бонус</div>
+                  <div class="rating-bonus__value">2 000<span class="rating-bonus__unit"> Р</span></div>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_4">
+                <a class="rating-overview" href="#"><svg width="18" height="10" class="rating-overview__symbol"><use xlink:href="#eye"></use></svg>Обзор</a>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_5">
+                <a class="rating-link" href="#"><svg width="16" height="16" class="rating-link__symbol"><use xlink:href="#chain"></use></svg>На сайт</a>
+              </td>
+            </tr>
+            <tr class="rating-table-full__row">
+              <td class="rating-table-full__col rating-table-full__col_1"><img src="images/bookmaker-7.png" width="130"  class="rating-table-full__pict" alt=""/></td>
+              <td class="rating-table-full__col rating-table-full__col_2">
+                <div class="rating-stars">
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol rating-stars__symbol_marked"><use xlink:href="#star"></use></svg>
+                  <svg width="13" height="13" class="rating-stars__symbol"><use xlink:href="#star"></use></svg>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_3">
+                <div class="rating-bonus">
+                  <div class="rating-bonus__title">Бонус</div>
+                  <div class="rating-bonus__value">2 000<span class="rating-bonus__unit"> Р</span></div>
+                </div>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_4">
+                <a class="rating-overview" href="#"><svg width="18" height="10" class="rating-overview__symbol"><use xlink:href="#eye"></use></svg>Обзор</a>
+              </td>
+              <td class="rating-table-full__col rating-table-full__col_5">
+                <a class="rating-link" href="#"><svg width="16" height="16" class="rating-link__symbol"><use xlink:href="#chain"></use></svg>На сайт</a>
+              </td>
+            </tr>
+          </table>
+          <a class="expand-btn expand-btn_dark" href="#"><svg width="15" height="17" class="expand-btn__symbol"><use xlink:href="#reload"></use></svg>Показать еще</a>
+        </div>
+        <div class="rating-page__sidebar">
+          <div class="rating-filter">
+            <form action="#" method="get" class="rating-filter__form">
+              <div class="rating-filter__title">ФИЛЬТР</div>
+              <input type="checkbox" name="legal" value="legal" id="legal" class="rating-filter__checkbox" />
+              <label for="legal" class="rating-filter__label rating-filter__label_checkbox">Легальные</label>
+              <div class="rating-filter__select-wrap">
+                <label for="reliability" class="rating-filter__label rating-filter__label_select">Рейтинг надежности</label>
+                <select name="reliability" id="reliability" class="rating-filter__select">
+                  <option value="rel-option" class="rating-filter__option" selected>lorem ipsum</option>
+                </select>
+              </div>
+              <input type="checkbox" name="rus-lang" value="rus-lang" id="rus-lang" class="rating-filter__checkbox" checked />
+              <label for="rus-lang" class="rating-filter__label rating-filter__label_checkbox">Русский язык на сайте</label>
+              <input type="checkbox" name="rus-support" value="rus-support" id="rus-support" class="rating-filter__checkbox" checked />
+              <label for="rus-support" class="rating-filter__label rating-filter__label_checkbox">Поддержка на русском</label>
+              <div class="rating-filter__select-wrap">
+                <label for="currencies" class="rating-filter__label">Популярные валюты</label>
+                <select name="currencies" id="currencies" class="rating-filter__select">
+                  <option value="rel-option" class="rating-filter__option" selected>lorem ipsum</option>
+                </select>
+              </div>
+              <input type="checkbox" name="live-betting" value="live-betting" id="live-betting" class="rating-filter__checkbox" />
+              <label for="live-betting" class="rating-filter__label rating-filter__label_checkbox">Ставки Live</label>
+              <input type="checkbox" name="bonus" value="bonus" id="bonus" class="rating-filter__checkbox" />
+              <label for="bonus" class="rating-filter__label rating-filter__label_checkbox">С бонусами</label>
+              <input type="checkbox" name="prof" value="prof" id="prof" class="rating-filter__checkbox" />
+              <label for="prof" class="rating-filter__label rating-filter__label_checkbox">Для профессионалов</label>
+              <input type="checkbox" name="demo-account" value="demo-account" id="demo-account" class="rating-filter__checkbox" checked />
+              <label for="demo-account" class="rating-filter__label rating-filter__label_checkbox">С демо-счётом</label>
+              <input type="checkbox" name="exchanges" value="exchanges" id="exchanges" class="rating-filter__checkbox" checked />
+              <label for="exchanges" class="rating-filter__label rating-filter__label_checkbox">Биржи ставок</label>
+              <input type="checkbox" name="mob-access" value="mob-access" id="mob-access" class="rating-filter__checkbox" />
+              <label for="mob-access" class="rating-filter__label rating-filter__label_checkbox">Доступ с мобильного</label>
+              <input name="reset-btn" type="reset" value="Сбросить фильтр" class="rating-filter__btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__upper-wrap">
+        <div class="footer-logo">
+          <div class="footer-logo__top-text">ТОП<span class="footer-logo__colored-text">50</span></div>
+          <div class="footer-logo__bottom-text">букмекеров</div>
+          <svg width="83" height="80" class="footer-logo__symbol"><use xlink:href="#star"></use></svg>
+        </div>
+        <div class="social-links">
+          <a class="social-links__link" href="#"><svg width="17" height="14" class="social-links__symbol"><use xlink:href="#twitter"></use></svg>twitter</a>
+          <a class="social-links__link" href="#"><svg width="22" height="13" class="social-links__symbol"><use xlink:href="#vk"></use></svg>vkontakte</a>
+        </div>
+      </div>
+      <div class="footer__links-wrap">
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading">РЕЙТИНГ БУКМЕКЕРОВ</a>
+          <a href="#" class="footer-links__link">Народный рейтинг</a>
+          <a href="#" class="footer-links__link">Легальные букмекеры</a>
+          <a href="#" class="footer-links__link">Букмекеры на мобильном</a>
+          <a href="#" class="footer-links__link">Букмекеры с бонусами</a>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading footer-links__heading_active">Прогнозы на спорт</a>
+          <a href="#" class="footer-links__link">Прогнозы на футбол</a>
+          <a href="#" class="footer-links__link">Прогнозы на хоккей</a>
+          <a href="#" class="footer-links__link">Прогнозы на теннис</a>
+          <a href="#" class="footer-links__link">Прогнозы на баскетбол</a>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading">Новости</a>
+          <a href="#" class="footer-links__link">Новости беттинга</a>
+          <a href="#" class="footer-links__link">Анонсы матчей</a>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-links__heading">Школа ставок</a>
+        </div>
+        <div class="download-links">
+          <a href="#" class="download-links__link download-links__link_google">Google Play</a>
+          <a href="#" class="download-links__link download-links__link_apple">AppStore</a>
+        </div>
+      </div>
+      <div class="footer__lower-links-wrap">
+        <a href="#" class="footer-link">Контакты</a>
+        <a href="#" class="footer-link">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__lower-wrap">
+        <div class="edition-descr">
+          <p class="edition-descr__text">Сетевое издание «ТОП50 букмекеров» зарегистрировано в Федеральной службе по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 1 ноября 2017 года. Свидетельство о регистрации ЭЛ № ФС 77 - 71481</p>
+          <p class="edition-descr__text">© 2015 - 2017 независимый рейтинг букмекеров от </p>
+        </div>
+        <div class="age-label">+18</div>
+      </div>
+    </footer>
+    <script src="scripts/script.min.js"></script>
+  </body>
+
+</html>
