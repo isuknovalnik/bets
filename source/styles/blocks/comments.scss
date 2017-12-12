@@ -1,0 +1,67 @@
+.comments {
+  display: block;
+  min-width: 320px;
+  width: 100%;
+  //- min-height: 141px;
+  padding: 0;
+  margin: 0;
+  // - color: $share-color;
+  // - background-color: $share-back;
+  
+  @media (min-width: $mob) {
+    display: block;
+    // - width: 350px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $w900) {
+    width: 545px;
+  }
+  
+  @media (min-width: $w1200) {
+    height: 107px;
+    width: 852px;
+  }
+  
+  &__wrap {
+    display: flex;
+    width: 320px;
+    height: 110px;
+    margin: 0;
+    
+    @media (min-width: $mob) {
+      height: 141px;
+      width: 100%;
+    }
+    
+    @media (min-width: $w1200) {
+      height: 107px;
+    }
+  }
+
+  &__heading {
+    
+  }
+  
+  &__pict {
+    
+  }
+  
+  &__form {
+    
+  }
+  
+  &__text {
+    
+    border: 1px solid transparent;
+    border-radius: 20px;
+  }
+  
+  &__btn {
+    
+    &:hover {
+      background-color: $bets-yellow-light;
+    }
+  }
+
+}
