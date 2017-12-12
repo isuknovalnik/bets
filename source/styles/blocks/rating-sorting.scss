@@ -1,39 +1,66 @@
 .rating-sorting {
-  display: flex;
-  flex-wrap: wrap;
-  width: 320px;
+  display: block;
+  width: 300px;
   margin: 0 auto;
-  min-height: 152px;
-  background-color: $rating-sorting-back;
-  
+  min-height: 56px;
+  background-color: $rating-back;
+
   @media (min-width: $mob) {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0;
+    background-color: $rating-sorting-back;
   }
   
   @media (min-width: $w900) {
-    align-items: center;
     min-height: 100px;
   }
   
   @media (min-width: $w1200) {
     flex-wrap: nowrap;
-    justify-content: space-between;
+    align-items: center;
     min-height: 68px;
   }
   
   &__title {
-    margin: 0;
+    display: block;
+    width: 277px;
+    height: 35px;
+    margin: 0 auto;
     padding: 0;
-    margin-right: 15px;
-    margin-top: 32px;
+    margin-top: 4px;
+    padding-top: 14px;
+    padding-left: 22px;
     font-size: 13px;
     font-weight: 900;
     text-transform: uppercase;
+    text-decoration: none;
     color: $rating-flt-title-mob;
+    background-color: $rating-sorting-back;
+    background-repeat: no-repeat;
+    background-position: 265px 19px;
+    background-size: 10px 6px;
+    border: 1px solid transparent;
+    border-radius: 24px;
     
-    @media (min-width: $mob) {
-      margin-top: 0;
+    &_closed {
+      background-image: url('../images/arrow-light-down.svg');
+    }
+    
+    &_opened {
+      background-image: url('../images/arrow-light-up.svg');
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+   @media (min-width: $mob) {
+      margin: 0;
+      margin-right: 15px;
+      border-radius: none;
+      background-image: none;
+      cursor: default;
     }
     
     @media (min-width: $w1200) {
@@ -42,15 +69,29 @@
   }
   
   &__form {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: none;
+    align-items: center;
     width: 300px;
-    margin-left: 10px;
+    height: 70px;
+    background-color: $rating-sorting-back;
+
     
     @media (min-width: $mob) {
+      display: block;
+      height: auto;
       margin-left: 20px;
-      align-items: baseline;
+    }
+    
+    &_closed {
+      display: none;
+      
+      @media (min-width: $mob) {
+        display: block;
+      }
+    }
+    
+    &_opened {
+      display: flex;
     }
     
   }
@@ -68,6 +109,7 @@
     height: 30px;
     margin: 0;
     padding: 0;
+    margin-left: 15px;
     font-family: $gotham;
     font-size: 16px;
     font-weight: 400;
@@ -79,6 +121,10 @@
     background-position: calc(100% - 10px) 15px;
     background-size: 7px 5px;
     background-image: url('../images/triangle.svg');
+
+    @media (min-width: $mob) {
+      margin-left: 0;
+    }
 
   }
   

@@ -2,7 +2,7 @@
   display: block;
   width: 300px;
   margin: 0 auto;
-  min-height: 56px;
+  min-height: 52px;
   background-color: $rating-back;
   
   @media (min-width: $mob) {
@@ -21,7 +21,7 @@
   
   &__title {
     display: block;
-    width: 278px;
+    width: 277px;
     height: 35px;
     margin: 20px auto 0;
     padding: 0;
@@ -60,6 +60,7 @@
       border: none;
       border-radius: none;
       background-image: none;
+      cursor: default;
     }
     
     @media (min-width: $w1200) {
