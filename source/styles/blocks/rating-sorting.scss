@@ -16,6 +16,7 @@
   
   @media (min-width: $w900) {
     min-height: 100px;
+    align-items: baseline;
   }
   
   @media (min-width: $w1200) {
@@ -55,9 +56,12 @@
       border-bottom-right-radius: 0;
     }
     
-   @media (min-width: $mob) {
+    @media (min-width: $mob) {
+      width: auto;
+      height: auto;
       margin: 0;
-      margin-right: 15px;
+      padding: 0;
+      margin-left: 15px;
       border-radius: none;
       background-image: none;
       cursor: default;
@@ -78,8 +82,8 @@
     
     @media (min-width: $mob) {
       display: block;
-      height: auto;
-      margin-left: 20px;
+      height: 30px;
+      // -margin-left: 20px;
     }
     
     &_closed {
