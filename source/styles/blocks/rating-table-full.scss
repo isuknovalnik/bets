@@ -57,6 +57,7 @@
 
   &__col .rating-bonus {
     @media (min-width: $mob) {
+      margin-left: 20px;
       margin-right: 50px;
     }
   }

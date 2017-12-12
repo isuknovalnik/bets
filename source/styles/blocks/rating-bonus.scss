@@ -1,9 +1,13 @@
 .rating-bonus {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 90px;
+  
+  &_empty {
+    display: none;
+  }
   
   &__title {
     color: $rating-color;
