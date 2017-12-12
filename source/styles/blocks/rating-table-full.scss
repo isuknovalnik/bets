@@ -63,7 +63,7 @@
       margin-top: 20px;
       
       @media (min-width: $w1200) {
-        width: 200px;
+        width: 172px;
       }
     }
 
@@ -86,10 +86,6 @@
       
       @media (min-width: $mob) {
         margin-left: 80px;
-      }
-      
-      @media (min-width: $w900) {
-        margin-left: 120px;
       }
     }
     
@@ -140,19 +136,24 @@
     @media (min-width: $w1200) {
       margin-left: 20px;
       margin-right: 25px;
-      width: 164px;
+      width: 150px;
     }
   }
   
   &__number {
     font-size: 24px;
-    font-weight: 700px;
+    font-weight: 700;
     color: $rating-number;
   }
   
   &__rating {
     display: flex;
     min-width: 64px;
+    
+    @media (min-width: $w1200) {
+      min-width: 100px;
+      margin-left: 10px;
+    }
   }
   
   &__rating-symbol {

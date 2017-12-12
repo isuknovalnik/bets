@@ -23,18 +23,19 @@
       display: block;
       width: 100%;
       min-height: 200px;
-      margin: 0 auto 30px;
+      margin: 0 auto 6px;
       font-size: 14px;
       line-height: 24px;
       font-weight: 400;
       color: $rating-full-color;
     }
-    
-    &__intro p {
-      margin: 0;
-    }
   }
-  
+
+  &__intro p {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
   & .expand-btn {
     margin-top: 18px;
     margin-left: calc((100% - 300px)/2);
