@@ -1,8 +1,8 @@
 .rating-filter {
   display: block;
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
-  min-height: 152px;
+  min-height: 56px;
   background-color: $rating-back;
   
   @media (min-width: $mob) {
@@ -22,28 +22,44 @@
   &__title {
     display: block;
     width: 278px;
-    height: 37px;
-    margin: 0 auto;
+    height: 35px;
+    margin: 20px auto 0;
     padding: 0;
-    padding-top: 12px;
+    padding-top: 14px;
     padding-left: 22px;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
     color: $rating-flt-title-mob;
     background-color: $rating-flt-back-mob;
+    background-repeat: no-repeat;
+    background-position: 265px 19px;
+    background-size: 10px 6px;
     border: 1px solid transparent;
     border-radius: 24px;
+    
+    &_closed {
+      background-image: url('../images/arrow-light-down.svg');
+    }
+    
+    &_opened {
+      background-image: url('../images/arrow-light-up.svg');
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
     
     @media (min-width: $mob) {
       width: calc(100% - 15px);
       padding-left: 15px;
       padding-top: 18px;
       font-size: 16px;
+      margin-top: 0;
       color: $rating-filter-title;
       background-color: $rating-filter-back;
       border: none;
       border-radius: none;
+      background-image: none;
     }
     
     @media (min-width: $w1200) {
@@ -52,7 +68,7 @@
   
   &__form {
     display: none;
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
     background-color: $rating-filter-back;
     
@@ -61,6 +77,19 @@
       width: 275px;
       margin: 0;
     }
+    
+    &_closed {
+      display: none;
+      
+      @media (min-width: $mob) {
+        display: block;
+      }
+    }
+    
+    &_opened {
+      display: block;
+    }
+
   }
   
   &__label {
