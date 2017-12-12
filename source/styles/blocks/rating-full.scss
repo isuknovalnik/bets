@@ -1,13 +1,14 @@
 .rating-full {
   display: block;
   margin: 0 auto;
-
+  
   @media (min-width: $mob) {
-    margin: 0;
-    width: 300px;
+    width: 420px;
   }
 
   @media (min-width: $w900) {
+    flex-shrink: 0;
+    margin: 0;
     width: 564px;
   }
 
@@ -18,7 +19,7 @@
   &__intro {
     display: none;
     
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       display: block;
       width: 100%;
       min-height: 200px;
@@ -40,6 +41,10 @@
     margin-bottom: 70px;
     
     @media (min-width: $mob) {
+      margin-left: calc((100% - 400px)/2);
+    }
+    
+    @media (min-width: $w900) {
       margin-top: 20px;
       margin-left: 0;
     }

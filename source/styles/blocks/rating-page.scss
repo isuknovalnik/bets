@@ -9,31 +9,27 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 1436px;
+    min-height: 940px;
     
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       flex-direction: row;
       justify-content: space-between;
-      width: 595px;
+      width: 859px;
       max-width: $desktop;
-      min-height: 2198px;
+      // - min-height: 2198px;
       margin: 42px auto 0;
     }
     
-    @media (min-width: $w900) {
-      width: 859px;
-    }
-
     @media (min-width: $w1200) {
       width: $desktop;
-      min-height: 2070px;
+      min-height: 1250px;
     }
   }
   
   &__sidebar {
     order: -1;
     
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       order: 0;
     }
   }

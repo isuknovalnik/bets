@@ -5,14 +5,11 @@
   min-height: 52px;
   background-color: $rating-back;
   
-  @media (min-width: $mob) {
+  @media (min-width: $w900) {
     width: 275px;
+    min-height: 100px;
     margin: 0;
     background-color: $rating-filter-back;
-  }
-  
-  @media (min-width: $w900) {
-    min-height: 100px;
   }
   
   @media (min-width: $w1200) {
@@ -49,7 +46,7 @@
       border-bottom-right-radius: 0;
     }
     
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       width: calc(100% - 15px);
       padding-left: 15px;
       padding-top: 18px;
@@ -73,7 +70,7 @@
     margin: 0 auto;
     background-color: $rating-filter-back;
     
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       display: block;
       width: 275px;
       margin: 0;
@@ -82,7 +79,7 @@
     &_closed {
       display: none;
       
-      @media (min-width: $mob) {
+      @media (min-width: $w900) {
         display: block;
       }
     }

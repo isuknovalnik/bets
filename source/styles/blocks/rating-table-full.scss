@@ -3,11 +3,14 @@
   width: 320px;
   margin: 25px auto 20px;
   border-collapse: collapse;
-
+  
   @media (min-width: $mob) {
+    width: 420px;
+  }
+  
+  @media (min-width: $w900) {
+    width: 564px;
     margin: 0;
-    margin-left: 26px;
-    margin-right: 26px;
   }
   
   &__row {
@@ -24,7 +27,7 @@
     &:first-child {
       border-top: 1px solid $rating-table-border;
       
-      @media (min-width: $w1200) {
+      @media (min-width: $w900) {
         border-top: none;
       }
     }
@@ -32,7 +35,7 @@
     &:nth-child(n+7) {
       display: none;
       
-      @media (min-width: $mob) {
+      @media (min-width: $w1200) {
         display: table-row;
       }
     }
@@ -49,7 +52,7 @@
     &_0 {
       display: none;
       
-      @media (min-width: $mob) {
+      @media (min-width: $w1200) {
         display: table-cell;
       }
     }
@@ -59,7 +62,7 @@
       margin-left: 10px;
       margin-top: 20px;
       
-      @media (min-width: $mob) {
+      @media (min-width: $w1200) {
         width: 200px;
       }
     }
@@ -68,16 +71,26 @@
       margin-left: 12px;
       margin-top: 25px;
 
-      /*
-      @media (min-width: $w900) {
-        width: 150px;
+      @media (min-width: $mob) {
+        margin-left: 80px;
       }
-      */
+      
+      @media (min-width: $w900) {
+        margin-left: 120px;
+      }
     }
     
     &_ext {
       margin-left: 30px;
       margin-top: 20px;
+      
+      @media (min-width: $mob) {
+        margin-left: 80px;
+      }
+      
+      @media (min-width: $w900) {
+        margin-left: 120px;
+      }
     }
     
     &_3 {
@@ -88,6 +101,10 @@
     
     &_4 {
       margin-left: 92px;
+      
+      @media (min-width: $w900) {
+        margin-left: 230px;
+      }
     }
     
     &_5 {
@@ -97,21 +114,21 @@
   }
   
   &__col .rating-link {
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       margin-right: 10px;
       margin-left: 6px;
     }
   }
 
   &__col .rating-bonus {
-    @media (min-width: $mob) {
+    @media (min-width: $w1200) {
       margin-left: 20px;
       margin-right: 50px;
     }
   }
   
   &__col .rating-stars {
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       margin-left: 20px;
       margin-right: 45px;
     }
@@ -120,7 +137,7 @@
   &__pict {
     width: 90px;
     
-    @media (min-width: $mob) {
+    @media (min-width: $w1200) {
       margin-left: 20px;
       margin-right: 25px;
       width: 164px;

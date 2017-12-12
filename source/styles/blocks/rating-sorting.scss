@@ -5,24 +5,14 @@
   min-height: 56px;
   background-color: $rating-back;
 
-  @media (min-width: $mob) {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0;
-    background-color: $rating-sorting-back;
-  }
-  
   @media (min-width: $w900) {
-    min-height: 100px;
-    align-items: baseline;
-  }
-  
-  @media (min-width: $w1200) {
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    width: 100%;
     min-height: 68px;
+    margin: 0;
+    background-color: $rating-sorting-back;
   }
   
   &__title {
@@ -56,19 +46,16 @@
       border-bottom-right-radius: 0;
     }
     
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       width: auto;
       height: auto;
       margin: 0;
       padding: 0;
       margin-left: 15px;
+      margin-right: 10px;
       border-radius: none;
       background-image: none;
       cursor: default;
-    }
-    
-    @media (min-width: $w1200) {
-      margin-right: 10px;
     }
   }
   
@@ -80,16 +67,15 @@
     background-color: $rating-sorting-back;
 
     
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       display: block;
       height: 30px;
-      // -margin-left: 20px;
     }
     
     &_closed {
       display: none;
       
-      @media (min-width: $mob) {
+      @media (min-width: $w900) {
         display: block;
       }
     }
@@ -126,10 +112,8 @@
     background-size: 7px 5px;
     background-image: url('../images/triangle.svg');
 
-    @media (min-width: $mob) {
+    @media (min-width: $w900) {
       margin-left: 0;
     }
-
   }
-  
 }
