@@ -1,13 +1,35 @@
 .rating-table-full {
   display: table;
-  
+  width: 320px;
+  margin: 25px auto 20px;
+  border-collapse: collapse;
+
   @media (min-width: $mob) {
+    margin: 0;
     margin-left: 26px;
     margin-right: 26px;
   }
   
   &__row {
-    &:nth-child(n+6) {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 108px;
+    border-bottom: 1px solid $rating-table-border;
+    
+    @media (min-width: $w1200) {
+      display: table-row;
+      border-bottom: 1px solid $rating-table-border;
+    }
+    
+    &:first-child {
+      border-top: 1px solid $rating-table-border;
+      
+      @media (min-width: $w1200) {
+        border-top: none;
+      }
+    }
+    
+    &:nth-child(n+7) {
       display: none;
       
       @media (min-width: $mob) {
@@ -17,9 +39,12 @@
   }
 
   &__col {
-    height: 59px;
-    border-collapse: collapse;
-    border-bottom: 1px solid $rating-table-border;
+    flex-shrink: 0;
+    height: 36px;
+    
+    @media (min-width: $w1200) {
+      height: 63px;
+    }
     
     &_0 {
       display: none;
@@ -31,6 +56,8 @@
     
     &_1 {
       width: 100px;
+      margin-left: 10px;
+      margin-top: 20px;
       
       @media (min-width: $mob) {
         width: 200px;
@@ -38,12 +65,33 @@
     }
 
     &_2 {
-      display: none;
-      
+      margin-left: 12px;
+      margin-top: 25px;
+
+      /*
       @media (min-width: $w900) {
-        display: table-cell;
         width: 150px;
       }
+      */
+    }
+    
+    &_ext {
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+    
+    &_3 {
+      width: 90px;
+      margin-top: -5px;
+      margin-left: 10px;
+    }
+    
+    &_4 {
+      margin-left: 92px;
+    }
+    
+    &_5 {
+      margin-left: 2px;
     }
     
   }
@@ -70,12 +118,12 @@
   }
 
   &__pict {
-    width: 73px;
+    width: 90px;
     
     @media (min-width: $mob) {
       margin-left: 20px;
       margin-right: 25px;
-      width: 130px;
+      width: 164px;
     }
   }
   
@@ -91,6 +139,8 @@
   }
   
   &__rating-symbol {
+    width: 17px;
+    height: 16px;
     margin-right: 6px;
     fill: $bets-yellow;
   }
