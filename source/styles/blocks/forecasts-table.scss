@@ -30,12 +30,6 @@
       border-top: none;
     }
     
-    &:first-child {
-      @media (min-width: $w1200) {
-        border-top: none;
-      }
-    }
-    
     &:hover {
       @media (min-width: $mob) {
         box-shadow: 0 25px 50px 3px $shadow-color,
