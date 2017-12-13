@@ -27,17 +27,13 @@
     @media (min-width: $mob) {
       display: flex;
     }
-      
-    @media (min-width: $w1200) {
-      display: table-row;
-    }
   }
     
     &:nth-child(n+7) {
       display: none;
 
       @media (min-width: $w1200) {
-        display: table-row;
+        display: flex;
       }
     }
   }
