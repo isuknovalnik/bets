@@ -110,6 +110,30 @@
     }
   }
   
+  .project  &__col_1 {
+    @media (min-width: $w1200) {
+      order: 6;
+    }
+  }
+  
+  .project  &__col_2 {
+    @media (min-width: $w1200) {
+      margin-left: 10px;
+    }
+  }
+  
+  .project  &__col_3 {
+    @media (min-width: $w1200) {
+      width: 330px;
+    }
+  }
+  
+  .project  &__col_6 {
+    @media (min-width: $w1200) {
+      margin-right: 30px;
+    }
+  }
+  
   &__date {
     margin-top: 15px;
     font-size: 12px;
