@@ -12,8 +12,8 @@
     margin-bottom: 18px;
   }
   
-  &:hover {
-    box-shadow: 0 25px 50px 3px $shadow-color;
+  &__link {
+    text-decoration: none;
   }
   
   &__wrap {
@@ -33,6 +33,10 @@
     overflow: hidden;
   }
   
+  &__link:hover &__title {
+    color: $editor-hover;
+  }
+  
   &__date {
     width: 110px;
     max-height: 24px;
@@ -45,6 +49,10 @@
     text-transform: uppercase;
     color: $card-text;
     overflow: hidden;
+  }
+  
+  &__link:hover &__date {
+    color: $editor-hover;
   }
   
   &__pict {
