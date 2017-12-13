@@ -65,6 +65,10 @@
     }
   }
 
+  &__link {
+    text-decoration: none;
+  }
+  
   &__label {
     width: 80px;
     height: 17px;
@@ -74,6 +78,7 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
     text-align: center;
     color: $card-heading;
     background-color: $bets-yellow;
@@ -124,6 +129,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
+    text-decoration: none;
     text-align: center;
     color: $card-heading;
     overflow: hidden;
@@ -194,6 +200,7 @@
     line-height: 24px;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
     text-align: center;
     color: $card-heading;
     overflow: hidden;
@@ -341,6 +348,7 @@
     line-height: 24px;
     font-weight: 500;
     font-style: italic;
+    text-decoration: none;
     color: $tags-color;
   }
   
@@ -351,6 +359,7 @@
     line-height: 24px;
     font-weight: 400;
     text-align: center;
+    text-decoration: none;
     color: $card-text;
   }
   

@@ -16,6 +16,10 @@
     box-shadow: 0 25px 50px 3px $shadow-color;
   }
   
+  &__link {
+    text-decoration: none;
+  }
+  
   &__pict {
     width: 300px;
     height: 180px;

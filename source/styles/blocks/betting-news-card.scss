@@ -20,6 +20,13 @@
     height: 800px;
 
     @media (min-width: $mob) {
+      width: 562px;
+      height: 400px;
+    }
+  }
+  
+  &_wide &__link {
+    @media (min-width: $mob) {
       display: flex;
       width: 562px;
       height: 400px;
@@ -51,6 +58,10 @@
       background-image: linear-gradient(to top, $card-pict-back 70px, transparent 170px);
       opacity: 0.8;
     }
+  }
+  
+  &__link {
+    text-decoration: none;
   }
 
   &__label {
