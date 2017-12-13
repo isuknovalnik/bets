@@ -131,9 +131,18 @@
     text-decoration: none;
     color: $filter-text;
     
+    &:hover {
+      color: $filter-hover;
+    }
+    
     &_selected {
       color: $filter-selected;
       cursor: default;
+      
+      &:hover {
+        color: $filter-selected;
+      }
     }
+    
   }
 }
