@@ -7,12 +7,19 @@
 
   @media (min-width: $w900) {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     width: 100%;
     min-height: 68px;
     margin: 0;
     background-color: $rating-sorting-back;
+  }
+  
+  &__wrap {
+    @media (min-width: $w900) {
+      display: flex;
+      align-items: baseline;
+      height: 30px;
+    }
   }
   
   &__title {
