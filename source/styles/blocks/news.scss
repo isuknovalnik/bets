@@ -39,11 +39,18 @@
   }
   
   &__articles-wrap .news-card {
-    &:nth-child(5),
-    &:nth-child(6) {
+    &:nth-child(5) {
       display: none;
 
       @media (min-width: $mob) {
+        display: block;
+      }
+    }
+    
+    &:nth-child(6) {
+      display: none;
+
+      @media (min-width: $w1200) {
         display: block;
       }
     }
