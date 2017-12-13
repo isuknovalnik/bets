@@ -18,11 +18,19 @@
     padding-top: 60px;
     font-size: 48px;
     line-height: 48px;
+    h1 {
+      font-size: 48px;
+    }
     &--news {
       padding-top: 30px;
     }
   }
-  
+  h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 800;
+  }
   &:before {
     display: none;
 
@@ -81,6 +89,10 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 10px;
+  @media (min-width: $mob) {
+    padding-bottom: 30px;
+  }
   li {
     margin-left: 8px;
     margin-right: 8px;
