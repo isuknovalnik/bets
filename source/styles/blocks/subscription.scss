@@ -110,6 +110,8 @@
     border-left: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     cursor: pointer;
     
     @media (min-width: $w1200) {
