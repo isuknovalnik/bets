@@ -36,9 +36,9 @@ $(".reviews__header-tab").click(function(e){
   $("."+infId).addClass("reviews__tab--active");
 });
 // аккордеон
-$(".reviews__tango-btn").click(function(e){
+$(".reviews__tango-title").click(function(e){
   e.preventDefault();
-  var seeId = $(this).attr("id");
-  $(this).toggleClass("reviews__tango-btn--active");
+  var seeId = $(this).children("a").attr("id");
+  $(this).children("a").toggleClass("reviews__tango-btn--active");
   $("."+seeId).toggleClass("reviews__tango-see--active");
 });
