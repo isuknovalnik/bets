@@ -25,14 +25,14 @@
     margin: 0 auto;
     
     @media (min-width: $mob) {
-      justify-content: space-around;
-      width: 100%;
+      justify-content: space-between;
+      width: 80%;
       min-height: 148px;
       max-width: $desktop;
     }
     
     @media (min-width: $w1200) {
-      justify-content: space-between;
+      width: $desktop;
     }
     
     & .footer-logo {
@@ -49,10 +49,9 @@
       @media (min-width: $mob) {
         margin-top: 62px;
         margin-left: 0;
-        margin-right: -14px;
+        margin-right: -10px;
       }
     }
-
   }
 
   &__links-wrap {
@@ -62,10 +61,8 @@
     
     @media (min-width: $mob) {
       display: flex;
-      justify-content: center;
-      align-content: center;
       flex-wrap: wrap;
-      width: 680px;
+      width: 80%;
       max-width: $desktop;
       margin: 0 auto;
     }
@@ -87,8 +84,8 @@
       margin-left: -2px;
       
       @media (min-width: $mob) {
-        margin-top: 10px;
-        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
       
       @media (min-width: $w1200) {
@@ -108,7 +105,7 @@
       justify-content: space-between;
       align-items: center;
       width: 380px;
-      margin: 0 auto;
+      margin-left: 10%;
     }
     
     @media (min-width: $w1200) {
