@@ -4,8 +4,12 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (min-width: $w900) {
+  @media (min-width: $mob) {
     margin: 0;
+    width: 350px;
+  }
+  
+  @media (min-width: $w900) {
     width: 545px;
   }
   
@@ -17,7 +21,7 @@
     width: 100%;
     border-bottom: 1px solid $card-border;
     
-    @media (min-width: $w900) {
+    @media (min-width: $mob) {
       border: 1px solid $card-border;
     }
   }
@@ -25,25 +29,27 @@
   &__pict-wrap {
     position: relative;
     background-color: $card-pict-back;
-    width: 320px;
-    margin: 0 auto;
-    
-    @media (min-width: $w900) {
-      width: 100%;
-      margin: 0;
-    }
-    
+    min-width: 320px;
+    width: 100%;
+    margin: 0;
   }
   
   &__pict {
     display: block;
-    width: 320px;
-    height: 340px;
+    min-width: 320px;
+    width: 100%;
+    min-height: 340px;
+    height: auto;
     margin: 0 auto;
     opacity: 0.7;
     
-    @media (min-width: $w900) {
+    @media (min-width: $w500) {
+      min-height: 282px;
+    }
+    
+    @media (min-width: $mob) {
       width: 100%;
+      min-height: 197px;
       max-width: 846px;
       height: auto;
     }
@@ -63,6 +69,18 @@
     display: block;
     width: 107px;
     height: 107px;
+    
+    @media (min-width: $mob) {
+      bottom: -35px;
+      width: 70px;
+      height: 70px;
+    }
+    
+    @media (min-width: $w900) {
+      bottom: -54px;
+      width: 107px;
+      height: 107px;
+    }
   }
   
   &__tv-time {
@@ -73,6 +91,11 @@
     top: 24px;
     right: 10px;
     width: 148px;
+    
+    @media (min-width: $mob) {
+      top: 15px;
+      right: 15px;
+    }
     
     @media (min-width: $w900) {
       top: 30px;
@@ -101,10 +124,11 @@
   
   &__title {
     position: absolute;
-    top: 151px;
+    top: 44.4%;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
+    width: calc(100% - 20px);
+    max-width: 380px;
     margin: 0;
     padding: 0;
     max-height: 120px;
@@ -114,6 +138,21 @@
     text-align: center;
     color: $card-heading-light;
     overflow: hidden;
+    
+    @media (min-width: $w500) {
+      top: 50%;
+      width: 90%;
+      max-width: 580px;
+    }
+   
+    @media (min-width: $mob) {
+      max-width: 620px;
+      top: 86px;
+      width: 330px;
+      font-size: 20px;
+      line-height: 24px;
+      max-height: 72px;
+    }
     
     @media (min-width: $w900) {
       top: 120px;
@@ -149,7 +188,7 @@
     margin: 0 auto 20px;
     width: 236px;
     
-    @media (min-width: $w900) {
+    @media (min-width: $mob) {
       width: 280px;
       margin-bottom: 24px;
     }
@@ -170,15 +209,16 @@
   }
   
   &__details {
-    width: 300px;
+    min-width: 300px;
+    width: calc(100% - 20px);
     padding: 0;
-    margin: 10px auto 15px;
+    margin: 10px 10px 15px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: $card-heading;
     
-    @media (min-width: $w900) {
+    @media (min-width: $mob) {
       width: 100%;
       margin: 26px 0 44px;
     }

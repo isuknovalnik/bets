@@ -8,13 +8,17 @@
     width: 100%;
     margin-top: 20px;
     
-    @media (min-width: $w900) {
+    @media (min-width: $mob) {
       display: flex;
       justify-content: space-between;
-      width: 845px;
-      margin: 44px auto 0;
-      max-width: $desktop;
       min-height: 2000px;
+      width: 650px;
+      margin: 44px auto 0;
+    }
+    
+    @media (min-width: $w900) {
+      width: 845px;
+      max-width: $desktop;
     }
     
     @media (min-width: $w1200) {
@@ -25,7 +29,7 @@
   &__sidebar {
     display: none;
     
-    @media (min-width: $w900) {
+    @media (min-width: $mob) {
       display: block;
     }
     

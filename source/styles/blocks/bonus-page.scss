@@ -9,17 +9,16 @@
     margin-top: 20px;
     
     @media (min-width: $mob) {
-      min-height: 1290px;
-      width: 650px;
-      margin: 44px auto 0;
       display: flex;
       justify-content: space-between;
+      min-height: 2000px;
+      width: 650px;
+      margin: 44px auto 0;
     }
     
     @media (min-width: $w900) {
       width: 845px;
       max-width: $desktop;
-      min-height: 1875px;
     }
     
     @media (min-width: $w1200) {
