@@ -1,9 +1,14 @@
 .comments {
   display: block;
-  width: 320px;
+  min-width: 320px;
+  width: calc(100% - 20px);
   min-height: 270px;
   margin: 0 auto;
   padding: 0;
+  
+  @media (min-width: $mob) {
+    width: 350px;
+  }
   
   @media (min-width: $w900) {
     width: 545px;
@@ -74,7 +79,7 @@
   
   &__text {
     height: 146px;
-    width: 280px;
+    width: calc(100% - 20px);
     margin: 0;
     padding: 0;
     padding-left: 20px;
