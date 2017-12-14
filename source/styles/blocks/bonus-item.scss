@@ -28,8 +28,10 @@
   
   &__pict {
     display: block;
-    width: 320px;
-    height: 183px;
+    min-width: 320px;
+    width: 100%;
+    min-height: 183px;
+    height: auto;
     margin: 0 auto;
     
     @media (min-width: $mob) {
@@ -136,9 +138,10 @@
   }
   
   &__details {
-    width: 300px;
+    min-width: 300px;
+    width: calc(100% - 20px);
     padding: 0;
-    margin: 10px auto 15px;
+    margin: 10px 10px 15px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
