@@ -4,8 +4,12 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (min-width: $w900) {
+  @media (min-width: $mob) {
     margin: 0;
+    width: 350px;
+  }
+  
+  @media (min-width: $w900) {
     width: 545px;
   }
   
@@ -16,28 +20,31 @@
   &__pict-wrap {
     position: relative;
     background-color: $card-pict-back;
-    width: 320px;
-    margin: 0 auto;
-    
-    @media (min-width: $w900) {
-      width: 100%;
-      margin: 0;
-    }
+    min-width: 320px;
+    width: 100%;
+    margin: 0;
   }
   
   &__pict {
     display: block;
-    width: 320px;
-    height: 340px;
+    min-width: 320px;
+    width: 100%;
+    min-height: 340px;
+    height: auto;
     margin: 0 auto;
     opacity: 0.7;
     
-    @media (min-width: $w900) {
+    @media (min-width: $w500) {
+      min-height: 282px;
+    }
+    
+    @media (min-width: $mob) {
       width: 100%;
+      min-height: 197px;
       max-width: 846px;
       height: auto;
     }
-    
+
     @media (min-width: $w1200) {
       width: 846px;
       height: 477px;
@@ -106,15 +113,16 @@
   }
 
   &__details {
-    width: 300px;
+    min-width: 300px;
+    width: calc(100% - 20px);
     padding: 0;
-    margin: 10px auto 15px;
+    margin: 10px 10px 15px;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: $card-heading;
     
-    @media (min-width: $w900) {
+    @media (min-width: $mob) {
       width: 100%;
       margin: 26px 0 44px;
     }
